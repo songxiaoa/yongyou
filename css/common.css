@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    color: #333;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: pingguo, "Microsoft Yahei", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+}
+
+div,
+header,
+footer,
+nav,
+section,
+aside,
+article,
+ul,
+dd,
+li,
+a,
+p,
+dl,
+dt,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+b,
+textarea,
+button,
+input,
+select,
+figure,
+figcaption {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    color: #333;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: pingguo, "Microsoft Yahei", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+}
+
+body:focus,
+div:focus,
+header:focus,
+footer:focus,
+nav:focus,
+section:focus,
+aside:focus,
+article:focus,
+ul:focus,
+dd:focus,
+li:focus,
+a:focus,
+p:focus,
+dl:focus,
+dt:focus,
+h1:focus,
+h2:focus,
+h3:focus,
+h4:focus,
+h5:focus,
+h6:focus,
+i:focus,
+b:focus,
+textarea:focus,
+button:focus,
+input:focus,
+select:focus,
+figure:focus,
+figcaption:focus {
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: #e14c46 !important;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(225, 76, 70, 0.6) !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(225, 76, 70, 0.6) !important;
+}
+
+.btn-default:focus,
+.btn-default.focus {
+    outline: 0 !important;
+}
+
+.clear-float::after {
+    content: '';
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/*头部*/
+.common-header {
+    width: 100%;
+    height: 80px;
+    background: rgba(255, 255, 255, 1);
+    top: 0;
+    left: 0;
+    line-height: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.header-main {
+    height: 100%;
+    margin: 0 auto;
+    width: 386px;
+}
+
+.lable {
+    display: inline-block;
+    color: #E60012;
+    font-size: 20px;
+}
+
+.lable-line {
+    padding: 0 10px;
+    width: 1px;
+    height: 36px;
+    color: #E60012;
+    display: inline-block;
+}
+
+/*nav*/
+.common-nav {
+    height: 80px;
+}
+
+.nav-right {
+    float: right;
+}
+
+.nav-left .tab a {
+    display: block;
+    float: left;
+    line-height: 80px;
+    margin-left: 35px;
+    color: #333 ;
+    text-decoration: none;
+}
+
+/*尾部*/
