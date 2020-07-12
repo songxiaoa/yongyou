@@ -1,0 +1,243 @@
+.content-calender-ri {
+    min-height: 902px;
+    width: 970px;
+    padding: 26px 19px 19px 19px;
+    background-color: #fff;
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 100px;
+    /* background-color: pink; */
+}
+
+.content-calender-ri .calender-ri-header {
+    padding: 0 20px;
+    height: 40px;
+    background: #FFF;
+    /* text-align: center; */
+    font-weight: bold;
+    font-size: 34px;
+    color: #333333;
+    line-height: 34px;
+    position: relative;
+}
+
+.content-calender-ri .calender-ri-header .btn {
+    text-decoration: none;
+    font-size: 20px;
+    color: indianred;
+    width: 20px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.content-calender-ri .calender-ri-header .btn-prev {
+    /* float: left; */
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url('../images/xiala.png');
+    background-size: cover;
+    margin: 0 9px;
+    position: relative;
+    top: 4px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.content-calender-ri .calender-ri-header .btn-prev:hover {
+    background-color: pink;
+}
+
+.content-calender-ri .calender-ri-header .btn-next:hover {
+    background-color: pink;
+}
+
+.content-calender-ri .calender-ri-header .btn-next {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url('../images/xiala.png');
+    background-size: cover;
+    margin: 0 9px;
+    position: relative;
+    top: 4px;
+    cursor: pointer;
+}
+
+.content-calender-ri .calender-ri-header .nyr {
+    width: 204px;
+    height: 36px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: PingFangSC-Medium;
+    font-size: 18px;
+    color: #666666;
+}
+
+.content-calender-ri .calender-ri-header .nyr>span {
+    display: inline-block;
+    width: 62px;
+    height: 36px;
+    background: #F8F8F8;
+    color: #666666;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.content-calender-ri .calender-ri-header .nyr>.aa {
+    position: relative;
+    left: 6px;
+}
+
+.content-calender-ri .calender-ri-header .nyr .nyractive {
+    background: #C13939;
+    color: #F4DEDE;
+}
+
+.calender-ri-main {
+    width: 930px;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.calender-ri-month {
+    height: 50px;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #666666;
+    text-align: left;
+    line-height: 50px;
+    padding-left: 30px;
+    background-color: #F1F1F1;
+}
+
+.calender-ri-detail {
+    margin-left: 37px;
+    border-left: 2px #DDDDDD dashed;
+    padding-left: 22px;
+    padding-right: 61px;
+    position: relative;
+}
+
+.calender-ri-detail>ul>li {
+    height: 108px;
+    border-bottom: 1px #D8D8D8 solid;
+}
+
+.calender-ri-detail .calender-ri-detail-time-icon {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: url('../images/dian_riqi.png') center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+}
+
+.calender-ri-detail>ul>li:nth-child(1) {
+    height: 42px;
+    border-bottom: 1px #D8D8D8 solid;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #333333;
+    padding-top: 20px;
+    border: none;
+    font-weight: 700;
+}
+
+.calender-ri-detail>ul>li:last-child {
+    padding-bottom: 150px;
+    border: none;
+}
+
+.calender-ri-detail-item {
+    padding-top: 20px;
+    position: relative;
+}
+
+.calender-ri-detail-name {
+    font-weight: 700;
+    color: #C13939;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.calender-ri-detail-name .calender-ri-detail-name-icon {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background: url('../images/dian_biaoqi.png') center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 30px;
+    left: -27px;
+}
+
+.calender-ri-detail-time {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.calender-ri-detail-addres {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.calender-ri-detail-time>span {
+    background: url(../images/shijian_1.png) no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+    margin-right: 3px;
+}
+
+.calender-ri-detail-addres>span {
+    background: url(../images/didian_1.png) no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+    margin-right: 3px;
+}
+
+.calender-ri-detail-click {
+    color: #FDFCFC;
+    height: 42px;
+    width: 100px;
+    border-radius: 8px;
+    background-color: #C13939;
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    max-height: 350px;
+    overflow: auto;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 100px;
+    padding: 5px;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 4px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}

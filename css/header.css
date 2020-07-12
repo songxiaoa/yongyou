@@ -1,0 +1,43 @@
+.header_left {
+    float: left;
+    padding-top: 15px;
+}
+
+.logo_bored {
+    width: 1px;
+    height: 26px;
+    margin-left: 12px;
+    background: #D8D8D8;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.logo_name {
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #C13939;
+    line-height: 26px;
+    vertical-align: top;
+    margin-left: 12px;
+    display: inline-block;
+}
+
+.header_left img {
+    width: 50px;
+    height: 32px;
+}
+
+.header_right {
+    float: right;
+    height: 100%;
+}
+
+.tab {
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #999999;
+    cursor: pointer;
+    line-height: 60px;
+    display: inline-block;
+    margin-left: 30px;
+}
