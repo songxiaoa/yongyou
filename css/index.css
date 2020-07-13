@@ -11,4 +11,264 @@
 .time-main {
     height: 536px;
     background: #F9F9F9;
+    padding-top: 80px;
+}
+
+.tip-main {
+    padding: 0 122px;
+}
+
+.tip-main li:last-child {
+    margin-right: 0;
+}
+
+.tip {
+    float: left;
+    margin-right: 128px;
+    text-align: center;
+    line-height: 72px;
+    width: 184px;
+    color: #333333;
+    font-size: 28px;
+    height: 72px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.tip-active {
+    background: linear-gradient(99deg, rgba(209, 32, 29, 1) 0%, rgba(225, 63, 39, 1) 100%);
+    box-shadow: 0px 2px 20px 0px rgba(186, 58, 58, 0.5);
+    color: #fff;
+}
+
+.timer-progress-bar {
+    padding: 30px 203px;
+}
+
+.bar {
+    width: 930px;
+    height: 5px;
+    background: rgba(172, 172, 172, 1);
+}
+
+.bar {
+    position: relative;
+}
+
+.bar .spot {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    border: 6px solid rgba(153, 153, 153, 1);
+    position: absolute;
+}
+
+.bar .spot-active {
+    border: 6px solid rgba(193, 57, 57, 1);
+}
+
+.bar .spot1 {
+    position: absolute;
+    left: 0;
+    top: -10px;
+}
+
+.bar .spot2 {
+    position: absolute;
+    left: 34%;
+    top: -10px;
+}
+
+.bar .spot3 {
+    position: absolute;
+    left: 68%;
+    top: -10px;
+}
+
+.bar .spot4 {
+    position: absolute;
+    left: 100%;
+    top: -10px;
+}
+
+.replace-img {
+    position: relative;
+}
+
+.replace-img img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gaofeng {
+    margin-top: 80px;
+}
+
+.text {
+    font-size: 34px;
+    color: #333333;
+}
+
+.plate {
+    padding: 0 64px;
+    height: 360px;
+}
+
+.plate-left {
+    float: left;
+    width: 640px;
+    height: 360px;
+    margin-right: 16px;
+}
+
+.plate-right {
+    float: left;
+    width: 582px;
+    height: 360px;
+    padding: 31px 24px;
+    background: rgba(249, 249, 249, 1);
+    border: 1px solid rgba(236, 236, 236, 1);
+}
+
+.plate-right li .plate-active {
+    color: #C13939 !important;
+}
+
+.plate-right li {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 16px;
+}
+
+.plate-right li div:first-child {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    font-weight: 500;
+    overflow: hidden;
+    word-break: break-all;
+    width: 535px;
+}
+
+.plate-right li div:last-child {
+    font-size: 14px;
+    color: #999999;
+    line-height: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    width: 535px;
+}
+
+.plate-right li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+
+.brief-introduction {
+    padding-top: 80px;
+}
+
+.content {
+    padding: 8px 253px 72px;
+    color: #666666;
+    font-size: 24px;
+    text-indent: 2em;
+    line-height: 38px;
+}
+
+.brief-list {
+    padding: 0 78px;
+
+}
+
+.brief-main {
+    height: 171px;
+}
+
+.brief-list-item-title {
+    position: relative;
+    padding-left: 58px;
+}
+
+.brief-list-item-title .icon {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: 8px;
+    left: 0;
+    background: #C13939;
+    border-radius: 50%;
+}
+
+.brief-red {
+    color: #C13939;
+
+}
+
+
+
+.brief-list-item-title .text {
+    font-size: 20px;
+}
+
+.alter {
+    font-size: 40px;
+}
+
+.brief-list>li {
+    float: left;
+    margin-right: 90px;
+}
+
+.brief-list-item>li {
+    position: relative;
+    padding-left: 10px;
+}
+
+.brief-list-item-title p {
+    border-bottom: 1px solid #C13939;
+}
+
+.brief-list-item li i {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: rgba(193, 57, 57, 1);
+    border-radius: 50%;
+    top: 8px;
+    left: 0;
+}
+
+.brief-list-item ul {
+    margin-top: 21px;
+}
+
+.brief-list-item ul li {
+    position: relative;
+    padding-left: 10px;
+}
+
+.brief-list li:last-child {
+    margin-right: 0;
+}
+
+.brief-list-item li p {
+    width: 318px;
+    height: 44px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(102, 102, 102, 1);
+    line-height: 22px;
 }

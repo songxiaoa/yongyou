@@ -205,7 +205,8 @@ a {
     max-width: 1400px;
     margin: 0 auto;
 }
-.banner-img{
+
+.banner-img {
     margin: 0 auto;
     height: 516px;
     width: 1400px;
@@ -260,7 +261,4 @@ a {
     color: #fff;
     text-align: center;
 }
-.time-main{
-    height: 536px;
-    padding: 80px;
-}
+
