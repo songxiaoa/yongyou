@@ -201,7 +201,16 @@ a {
 /*banner*/
 .banner {
     height: 516px;
-    background: #D90202;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.banner-img{
+    margin: 0 auto;
+    height: 516px;
+    width: 1400px;
+    display: inline-block;
+    background: url('../images/banner_zhuce.png')no-repeat;
+    background-size: 100% 100%;
 }
 
 /*尾部*/
@@ -217,7 +226,7 @@ a {
 }
 
 .footer-logo {
-    background: url('../images/logo_dahui.png')no-repeat center;
+    background: url('../images/logo_dibu.png')no-repeat center;
     width: 348px;
     height: 66px;
     background-size: 100% 100%;
@@ -227,19 +236,26 @@ a {
     left: 172px;
 }
 
-.footer-box1{
+.footer-main .footer-box1 {
     position: absolute;
     right: 315px;
     top: 72px;
 }
-.footer-box2{
+
+.footer-main .footer-box2 {
     position: absolute;
     right: 171px;
     top: 72px;
 }
-.footer-box img {
+
+.footer-main .footer-box img {
     width: 120px;
     height: 120px;
     background: rgba(255, 255, 255, 1);
     border: 1px solid rgba(151, 151, 151, 1);
+}
+
+.logo-text {
+    color: #fff;
+    text-align: center;
 }
