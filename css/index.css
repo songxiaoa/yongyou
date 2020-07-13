@@ -1,4 +1,14 @@
-.line-red{
+.line-red {
     background: #C13939;
     height: 4px;
+}
+
+.page-main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.time-main {
+    height: 536px;
+    background: #F9F9F9;
 }
