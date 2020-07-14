@@ -71,18 +71,20 @@
 }
 
 .m-right {
-    width : 380px;
-    height: 100%;
-    float : right;
+    width   : 380px;
+    height  : 100%;
+    float   : right;
     position: relative;
 }
 
 .m-r-t {
-    width        : 380px;
-    min-height   : 320px;
-    border-radius: 4px;
-    border       : 1px solid rgba(221, 221, 221, 1);
-    box-sizing   : border-box;
+    width         : 380px;
+    min-height    : 320px;
+    border-radius : 4px;
+    border        : 1px solid rgba(221, 221, 221, 1);
+    box-sizing    : border-box;
+    position      : relative;
+    padding-bottom: 78px;
 }
 
 .m-r-title {
@@ -92,13 +94,23 @@
     border-bottom: 1px solid #DDDDDD;
     text-align   : center;
     font-family  : PingFangSC-Medium, PingFang SC;
-    font-weight  : 500;
-    color        : rgba(102, 102, 102, 1);
     box-sizing   : border-box;
 }
-.m-r-p1{
-    font-size    : 20px;
-    text-align: center;
+
+.m-r-p0 {
+    font-size  : 20px;
+    text-align : center;
+    font-weight: 500;
+    line-height: 38px;
+    color      : rgba(102, 102, 102, 1);
+}
+
+.m-r-p1 {
+    font-size  : 20px;
+    text-align : center;
+    font-size  : 14px;
+    font-weight: 500;
+    color      : rgba(102, 102, 102, 1);
 }
 
 .m-r-content {
@@ -151,18 +163,16 @@
 }
 
 .button-div {
-    width        : 320px;
+    width        : 100px;
     height       : 44px;
-    background   : #eb887d;
+    background   : linear-gradient(90deg, rgba(209, 32, 29, 1) 0%, rgba(225, 63, 39, 1) 100%);
     border-radius: 4px;
-    margin       : 20px 0px 40px 0px;
-    text-align   : center;
-    font-size    : 16px;
-    line-height  : 44px;
-    font-family  : PingFangSC-Regular, PingFang SC;
-    font-weight  : 400;
-    color        : rgba(255, 255, 255, 1);
     cursor       : pointer;
+    display      : inline-block;
+    color        : #fff;
+    text-align   : center;
+    line-height  : 44px;
+
 }
 
 .phone-tip,
@@ -176,37 +186,58 @@
 }
 
 .pager {
-    padding: 0 5px;
+    padding : 0 5px;
     position: absolute;
-    top: -30px;
+    top     : -30px;
 }
 
 .pager-bar {
     width     : 364px;
     height    : 1px;
     background: #DDDDDD;
-    position: relative;
+    position  : relative;
 }
-.pager-bar span{
-    position: absolute;
-    display: inline-block;
-    width: 44px;
-    height: 44px;
+
+.pager-bar span {
+    position   : absolute;
+    display    : inline-block;
+    width      : 44px;
+    height     : 44px;
     line-height: 44px;
-    top: -22px;
-    text-align: center;
-    background: url('../images/quan_wxz.png')no-repeat;
+    top        : -22px;
+    text-align : center;
+    background : url('../images/quan_wxz.png')no-repeat;
 }
-.pager-bar span:nth-child(1){
+
+.pager-bar span:nth-child(1) {
     left: 0;
 }
-.pager-bar span:nth-child(2){
+
+.pager-bar span:nth-child(2) {
     left: 44%;
 }
-.pager-bar span:nth-child(3){
+
+.pager-bar span:nth-child(3) {
     right: 0;
 }
-.pager-bar .pager-bar-active{
+
+.pager-bar .pager-bar-active {
     background: url('../images/quan_xuanzhong.png')no-repeat;
-    color: #fff;
+    color     : #fff;
+}
+
+.m-r-content>div {
+    margin-bottom: 10px;
+}
+
+.m-r-content .btn-bottom {
+    position     : absolute;
+    padding-top  : 17px;
+    margin-bottom: 0px;
+    bottom       : 0;
+    left         : 0;
+    width        : 380px;
+    height       : 78px;
+    text-align   : right;
+    background   : rgba(249, 249, 249, 1);
 }
