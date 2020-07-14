@@ -470,6 +470,24 @@
     right: 0;
     background: rgba(223, 186, 186, 1);
 }
-.tab-item-td li >div{
-    
+
+.tab-item-td {
+    margin-top: 16px;
+}
+
+.tab-item-td li>div {
+    float: left;
+    width: 308px;
+    font-size: 28px;
+    font-family: DINAlternate-Bold, DINAlternate;
+    font-weight: bold;
+    color: rgba(51, 51, 51, 1);
+    line-height: 44px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.tab-item-td li>div:last-child {
+    float: left;
+    width: 534px;
 }
