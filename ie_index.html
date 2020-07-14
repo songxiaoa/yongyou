@@ -19,6 +19,7 @@
     <link rel="shortcut icon" href="./favicon.png">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
     <script>
         function browserRedirect() {
             var sUserAgent = navigator.userAgent.toLowerCase();
@@ -292,6 +293,48 @@
                 <div class="title">
                     <span class="text">大会嘉宾</span>
                 </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/dahuijiabin1.png" alt="">
+                            <div class="box">
+                                <span class="xian"></span>
+                                <div class="name">张勇</div>
+                                <div class="work">蚂蚁金服集团总裁</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="./images/dahuijiabin2.png" alt="">
+
+                            <div class="box">
+                                <span class="xian"></span>
+                                <div class="name">陈强兵</div>
+                                <div class="work">用友网络CEO/总裁</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="./images/dahuijiabin3.png" alt="">
+                            <div class="box">
+                                <span class="xian"></span>
+                                <div class="name">王文京</div>
+                                <div class="work">用友网络董事长</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="./images/dahuijiabin4.png" alt="">
+                            <div class="box">
+                                <span class="xian"></span>
+                                <div class="name">胡晓明</div>
+                                <div class="work">蚂蚁金服集团董事</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="./images/dahuijiabin5.png" alt="">
+                            <div class="box">
+                                <span class="xian"></span>
+                                <div class="name">张建峰</div>
+                                <div class="work">阿里巴巴董事</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination2"></div>
                 <div class="assembly">
                     <img src="./images/test/t5.jpg" alt="" style="width: 100%;" >
                     <img src="./images/test/t4.jpg" alt="" style="width: 100%;" >
@@ -394,5 +437,19 @@
         </footer>
     </div>
 </body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
 
 </html>
