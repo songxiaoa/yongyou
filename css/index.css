@@ -298,6 +298,7 @@
 .conten-bg {
     background: url('../images/bg_dahuijianjie.png')no-repeat center;
     position: relative;
+    padding-bottom: 30px;
 }
 
 .yuan1_dahuijianjie {
@@ -475,6 +476,10 @@
     margin-top: 16px;
 }
 
+.tab-item-td li {
+    margin-bottom: 10px;
+}
+
 .tab-item-td li>div {
     float: left;
     width: 308px;
@@ -487,7 +492,16 @@
     text-align: center;
 }
 
+.tab-item-td li>div:nth-child(2) {
+    font-size: 24px;
+}
+
 .tab-item-td li>div:last-child {
     float: left;
+    font-size: 20px;
     width: 534px;
+}
+
+.bg_dahuijiabin{
+    background: url('../images/bg_dahuijiabin.png');
 }
