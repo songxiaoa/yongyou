@@ -12,10 +12,13 @@
     height: 536px;
     background: #F9F9F9;
     padding-top: 80px;
+    background: url('../images/bg_dahuishijian.png')no-repeat center;
+    background-size: 100%;
 }
 
 .tip-main {
-    padding: 0 122px;
+    padding: 0 140px;
+
 }
 
 .tip-main li:last-child {
@@ -26,23 +29,27 @@
     float: left;
     margin-right: 128px;
     text-align: center;
-    line-height: 72px;
+    line-height: 60px;
     width: 184px;
     color: #333333;
     font-size: 28px;
     height: 72px;
     border-radius: 20px;
-    background: #fff;
+    background: url('../images/bg_shijian_mr.png')no-repeat center;
+    background-size: 100% 100%;
 }
 
 .tip-active {
-    background: linear-gradient(99deg, rgba(209, 32, 29, 1) 0%, rgba(225, 63, 39, 1) 100%);
-    box-shadow: 0px 2px 20px 0px rgba(186, 58, 58, 0.5);
+    display: inline-block;
+    width: 184px;
+    height: 72px;
+    background: url('../images/bg_shijian_xz@2x.png')no-repeat center;
+    background-size: 100% 100%;
     color: #fff;
 }
 
 .timer-progress-bar {
-    padding: 30px 203px;
+    padding: 30px 222px;
 }
 
 .bar {
@@ -97,10 +104,14 @@
     position: relative;
 }
 
-.replace-img img {
+.replace-img .img {
     position: absolute;
     left: 50%;
-    transform: translate(-50%);
+    margin-left: -488px;
+}
+
+.biaozi {
+    background: url('../images/');
 }
 
 .title {
@@ -110,12 +121,20 @@
 
 .gaofeng {
     margin-top: 80px;
+    margin-bottom: 80px;
 }
 
-.text {
+.title .text {
+    display: inline-block;
+    width: 244px;
+    height: 32px;
+    text-align: center;
     font-size: 34px;
+    font-weight: bold;
     color: #333333;
+    background: url('../images/tb_biaoti_sizi.png')no-repeat center;
 }
+
 
 .plate {
     padding: 0 64px;
@@ -127,6 +146,101 @@
     width: 640px;
     height: 360px;
     margin-right: 16px;
+}
+
+.left-img {
+    position: absolute;
+    left: 249px;
+    top: 18px;
+}
+
+.left-img span {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    margin-top: -20px;
+
+}
+
+.replace-title span {
+    position: absolute;
+    font-size: 34px;
+    top: 10px;
+    left: 0;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: rgba(193, 57, 57, 1);
+    line-height: 38px;
+}
+
+.replace-title {
+    position: absolute;
+    left: 333px;
+    width: 462px;
+    top: 30px;
+}
+
+.replace-list {
+    position: absolute;
+    width: 560px;
+    height: 120px;
+    left: 327px;
+    top: 110px;
+}
+
+.replace-list>div {
+    float: left;
+    margin-right: 24px;
+}
+
+.replace-list>ul {
+    margin-top: 21px;
+    float: left;
+}
+
+.replace-list>ul>li {
+    margin-bottom: 10px;
+    padding-left: 28px;
+    position: relative;
+}
+
+.replace-list>ul>li i {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 2px;
+    left: 0;
+    background: url('../images/shijian_dahui.png')no-repeat center;
+}
+
+.replace-list>ul>li .jiudian_dahui {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 2px;
+    left: 0;
+    background: url('../images/jiudian_dahui.png')no-repeat center;
+}
+
+.replace-list>ul>li .didian_dahui {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 2px;
+    left: 0;
+    background: url('../images/didian_dahui.png')no-repeat center;
+}
+
+.replace-list>ul>li:last-child {
+    margin-bottom: 0;
+}
+
+.zuhai {
+    position: absolute;
+    left: 902px;
+    top: 145px;
 }
 
 .plate-right {
@@ -177,8 +291,21 @@
 }
 
 .brief-introduction {
-    padding-top: 80px;
+    /* padding-top: 80px; */
+    background-size: 100%;
 }
+
+.conten-bg {
+    background: url('../images/bg_dahuijianjie.png')no-repeat center;
+    position: relative;
+}
+
+.yuan1_dahuijianjie {
+    position: absolute;
+    left: 17px;
+    top: 0;
+}
+
 
 .content {
     padding: 8px 253px 72px;
@@ -195,6 +322,7 @@
 
 .brief-main {
     height: 171px;
+    margin-bottom: 80px;
 }
 
 .brief-list-item-title {
@@ -271,4 +399,77 @@
     font-weight: 400;
     color: rgba(102, 102, 102, 1);
     line-height: 22px;
+}
+
+.sc-tab {
+    padding: 0px 86px;
+    margin-bottom: 20px;
+}
+
+.sc-tab>div {
+    float: left;
+    width: 614px;
+    border-radius: 6px 0px 0px 6px;
+    border: 2px solid rgba(222, 58, 38, 1);
+    height: 100px;
+    background: #fff;
+    padding: 20px 0 32px 182px;
+}
+
+.sc-tab>div:last-child {
+    border-radius: 0px 6px 6px 0px;
+}
+
+.sc-tab>div.active {
+    background: linear-gradient(100deg, rgba(209, 32, 29, 1) 0%, rgba(225, 63, 39, 1) 100%);
+    border: none;
+}
+
+.tab-item {
+    margin: 0 auto;
+    width: 1236px;
+    padding: 20px;
+    height: 324px;
+    background: rgba(255, 252, 252, 1);
+    border-radius: 6px;
+    border: 1px solid rgba(223, 186, 186, 1);
+}
+
+.tab-item-th {
+    border-bottom: 1px solid #DFBABA;
+    padding-bottom: 26px;
+}
+
+.tab-item-th li {
+    float: left;
+    width: 308px;
+    text-align: center;
+    font-size: 24px;
+    font-family: PingFang-SC-Bold, PingFang-SC;
+    font-weight: bold;
+    color: rgba(193, 57, 57, 1);
+    line-height: 28px;
+    position: relative;
+}
+
+.tab-item-th li:last-child {
+    float: left;
+    width: 534px;
+    text-align: center;
+    font-size: 24px;
+    font-family: PingFang-SC-Bold, PingFang-SC;
+    font-weight: bold;
+    color: rgba(193, 57, 57, 1);
+    line-height: 28px;
+}
+
+.tab-item-th li span {
+    position: absolute;
+    width: 1px;
+    height: 40px;
+    right: 0;
+    background: rgba(223, 186, 186, 1);
+}
+.tab-item-td li >div{
+    
 }
