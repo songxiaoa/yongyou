@@ -502,3 +502,58 @@
 .bg_dahuijiabin{
     background: url('../images/bg_dahuijiabin.png');
 }
+.assembly {
+    padding: 64px 64px 0 64px ;
+    margin-bottom: 78px !important;
+}
+.special {
+    margin-bottom: 78px !important;
+}
+.news {
+    margin-bottom: 78px !important;
+    padding: 0 171px;
+}
+.more-box {
+    text-align: center;
+    margin-top: 40px !important;
+}
+.more {
+    width:100px;
+    height:34px;
+    display: inline-block;
+    border-radius:4px;
+    border:1px solid rgba(193,57,57,1);
+    text-align: center;
+    line-height: 34px;
+    font-size:14px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(193,57,57,1);
+    cursor: pointer;
+}
+.sponsor {
+    margin-top: 78px !important;
+}
+/* 支持媒体 */
+.media {
+    width: 1236px;
+    margin: 0 auto;
+}
+.mb {
+    margin-bottom: 64px;
+}
+.img-box {
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+.img-y {
+    width: 195px;
+    height: 95px;
+    margin-right: 13px;
+    margin-bottom: 16px;
+    float: left;
+}
+.img-y:nth-child(6n) {
+    margin-right: 0;
+}
+
