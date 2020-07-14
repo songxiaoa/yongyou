@@ -244,3 +244,24 @@
     text-align: right;
     background: rgba(249, 249, 249, 1);
 }
+
+.agree-b {
+    padding-left: 20px;
+    position: relative;
+}
+
+.agree-b label {
+    font-size: 12px;
+    color: #999999;
+}
+
+.agree-b input {
+    position: absolute;
+    top: 15%;
+    left: 0;
+}
+
+.color-blue {
+    color: #00A0FF;
+    text-decoration: underline !important;
+}
