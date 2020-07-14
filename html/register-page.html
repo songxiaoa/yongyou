@@ -18,7 +18,7 @@
     <title>2020商业创新大会 —— 商业创新，如此便捷</title>
     <link rel="shortcut icon" href="../favicon.png">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/register-page.css">
     <script src="../js/jquery.min.js"></script>
     <script src="../js/register.js"></script>
 </head>
@@ -50,17 +50,34 @@
                     </div>
                 </div>
                 <div class="m-right">
+                    <div class="pager">
+                        <div class="pager-bar">
+                            <span class="pager-bar-active">1</span>
+                            <span>2</span>
+                            <span>3</span>
+                        </div>
+                    </div>
                     <div class="m-r-t">
-                        <div class="m-r-title">欢迎您登陆用友商业创新大会</div>
+                        <div class="m-r-title">
+                            <p class="m-r-p0">欢迎您注册用友商业创新大会</p>
+                            <p class="m-r-p1">请您填写以下信息完成注册</p>
+                        </div>
                         <div class="m-r-content">
-                            <div class="phone-div">
-                                <input type="text" id="phone" class="phone" placeholder="请输入手机号码">
-                                <input type="button" class="slot-code" value="发送验证码"></input>
-                                <div class="phone-tip">请输入正确的手机号码</div>
+                            <div class="code-div">
+                                <input type="text" id="code" class="code" placeholder="请输入姓名">
+                                <div class="code-tip">请输入姓名</div>
                             </div>
                             <div class="code-div">
-                                <input type="text" id="code" class="code" placeholder="请输入验证码">
-                                <div class="code-tip">请输入正确的验证码</div>
+                                <input type="text" id="code" class="code" placeholder="请输入公司名称">
+                                <div class="code-tip">请输入公司名称</div>
+                            </div>
+                            <div class="code-div">
+                                <input type="text" id="code" class="code" placeholder="请输入职位">
+                                <div class="code-tip">请输入职位</div>
+                            </div>
+                            <div class="code-div">
+                                <input type="text" id="code" class="code" placeholder="请输入邮箱">
+                                <div class="code-tip">请输入邮箱</div>
                             </div>
                             <div class="button-div active" onclick="login">
                                 登录
