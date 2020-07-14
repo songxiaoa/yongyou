@@ -39,12 +39,9 @@
     background-size: 100% 100%;
 }
 
-.tip-active {
-    display: inline-block;
-    width: 184px;
-    height: 72px;
-    background: url('../images/bg_shijian_xz@2x.png')no-repeat center;
-    background-size: 100% 100%;
+.tip-active { 
+    background: url('../images/bg_shijian_xz@2x.png') no-repeat center center;
+    background-size: 219px 105px;
     color: #fff;
 }
 
@@ -296,7 +293,7 @@
 }
 
 .conten-bg {
-    background: url('../images/bg_dahuijianjie.png')no-repeat center;
+    background: url('../images/bg_dahuijianjie.png');
     position: relative;
     padding-bottom: 30px;
 }
