@@ -293,7 +293,7 @@
 }
 
 .conten-bg {
-    background: url('../images/bg_dahuijianjie.png')no-repeat center;
+    background: url('../images/bg_dahuijianjie.png');
     position: relative;
     padding-bottom: 30px;
 }
