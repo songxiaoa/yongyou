@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/register-page.css">
     <script src="../js/jquery.min.js"></script>
-    <script src="../js/register.js"></script>
+    <script src="../js/register-page.js"></script>
 </head>
 
 <body>
@@ -64,27 +64,28 @@
                         </div>
                         <div class="m-r-content">
                             <div class="code-div">
-                                <input type="text" id="code" class="code" placeholder="请输入姓名">
-                                <div class="code-tip">请输入姓名</div>
+                                <input type="text" id="reg_user"  class="code" placeholder="请输入姓名">
+                                <div class="code-tip reg_user_error">请输入姓名</div>
                             </div>
                             <div class="code-div">
-                                <input type="text" id="code" class="code" placeholder="请输入公司名称">
-                                <div class="code-tip">请输入公司名称</div>
+                                <input type="text" id="reg_company"  class="code" placeholder="请输入公司名称">
+                                <div class="code-tip reg_company_error">请输入公司名称</div>
                             </div>
                             <div class="code-div">
-                                <input type="text" id="code" class="code" placeholder="请输入职位">
-                                <div class="code-tip">请输入职位</div>
+                                <input type="text" id="reg_post"  class="code" placeholder="请输入职位">
+                                <div class="code-tip reg_post_error">请输入职位</div>
                             </div>
                             <div class="code-div">
-                                <input type="text" id="code" class="code" placeholder="请输入邮箱">
-                                <div class="code-tip">请输入邮箱</div>
+                                <input type="text" id="reg_email" class="code" placeholder="请输入邮箱">
+                                <div class="code-tip reg_email_error">请输入邮箱</div>
                             </div>
                             <div class="agree-b">
                                 <input id="agree" type="checkbox">
                                 <label for="agree">我理解并同意按照用友<a class="color-blue">隐私保护条款</a>和<a class="color-blue">使用条款</a>使用和传递我的个人信息</label>
+                                <div class="code-tip reg_agree_error">请勾选协议</div>
                             </div>
                             <div class="btn-bottom">
-                                <div class="button-div active" onclick="login">
+                                <div class="button-div active register" >
                                     下一步
                                 </div>
                             </div>

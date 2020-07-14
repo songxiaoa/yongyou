@@ -199,6 +199,25 @@
     background: #DDDDDD;
     position: relative;
 }
+/* 进度条线样式 */
+.red-bar {
+    display: block;
+    width: 116px;
+    height: 2px;
+    background: #C13939;
+    position: absolute;
+    left: 44px;
+    top:0;
+}
+.red-bar-two {
+    display: block;
+    width: 116px;
+    height: 2px;
+    background: #C13939;
+    position: absolute;
+    left: 204px;
+    top:0;
+}
 
 .pager-bar span {
     position: absolute;
@@ -211,25 +230,30 @@
     background: #fff url('../images/quan_wxz.png')no-repeat;
 }
 
-.pager-bar span:nth-child(1) {
+.pager-bar .one-bar {
     left: 0;
 }
 
-.pager-bar span:nth-child(2) {
+.pager-bar .two-bar {
     left: 44%;
 }
 
-.pager-bar span:nth-child(3) {
+.pager-bar .three-bar {
     right: 0;
 }
-
+/* 当前高亮样式 */
 .pager-bar .pager-bar-active {
     background: #fff url('../images/quan_xuanzhong.png')no-repeat;
     color: #fff;
 }
-
+/* 完成的样式 */
+.pager-bar .pager-bar-active-fisrt {
+    background: #C13939;
+    color: #fff;
+    border-radius: 50%;
+}
 .m-r-content>div {
-    margin-bottom: 14px;
+    margin-bottom: 8px;
 }
 
 .m-r-content .btn-bottom {
@@ -244,7 +268,26 @@
     text-align: right;
     background: rgba(249, 249, 249, 1);
 }
-
+.check-box {
+    
+    overflow: hidden;
+}
+.check-box > input {
+    float: left;
+    margin-top: 2px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+.check-box > div {
+    float: left;
+    height:18px;
+    font-size:14px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    line-height:18px;
+    cursor: pointer;
+}
 .agree-b {
     padding-left: 20px;
     position: relative;
