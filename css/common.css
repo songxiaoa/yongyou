@@ -215,6 +215,15 @@ a {
     background-size: 100% 100%;
 }
 
+.banner-img-index {
+    margin: 0 auto;
+    height: 516px;
+    width: 1400px;
+    display: inline-block;
+    background: url('../images/banner_index.png')no-repeat;
+    background-size: 100% 100%;
+}
+
 /*尾部*/
 .footer {
     background: #424242;
