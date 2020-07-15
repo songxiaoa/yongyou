@@ -4,7 +4,7 @@
 }
 
 .page-main {
-    max-width: 1400px;
+    width: 1400px;
     margin: 0 auto;
 }
 
@@ -315,8 +315,7 @@
 }
 
 .brief-list {
-    padding: 0 78px;
-
+    padding: 0 28px 0 78px;
 }
 
 .brief-main {
@@ -404,6 +403,7 @@
     padding: 0px 86px;
     margin-bottom: 20px;
 }
+
 
 .sc-tab>div {
     float: left;
