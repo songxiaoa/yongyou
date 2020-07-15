@@ -39,7 +39,7 @@
     background-size: 100% 100%;
 }
 
-.tip-active { 
+.tip-active {
     background: url('../images/bg_shijian_xz@2x.png') no-repeat center center;
     background-size: 219px 105px;
     color: #fff;
@@ -503,50 +503,60 @@
 .bg_dahuijiabin {
     /* background: url('../images/bg_dahuijiabin.png'); */
 }
+
 .assembly {
-    padding: 64px 64px 0 64px ;
+    padding: 64px 64px 0 64px;
     margin-bottom: 78px !important;
 }
+
 .special {
     margin-bottom: 78px !important;
 }
+
 .news {
     margin-bottom: 78px !important;
     padding: 0 171px;
 }
+
 .more-box {
     text-align: center;
     margin-top: 40px !important;
 }
+
 .more {
-    width:100px;
-    height:34px;
+    width: 100px;
+    height: 34px;
     display: inline-block;
-    border-radius:4px;
-    border:1px solid rgba(193,57,57,1);
+    border-radius: 4px;
+    border: 1px solid rgba(193, 57, 57, 1);
     text-align: center;
     line-height: 34px;
-    font-size:14px;
-    font-family:PingFangSC-Regular,PingFang SC;
-    font-weight:400;
-    color:rgba(193,57,57,1);
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(193, 57, 57, 1);
     cursor: pointer;
 }
+
 .sponsor {
     margin-top: 78px !important;
 }
+
 /* 支持媒体 */
 .media {
     width: 1236px;
     margin: 0 auto;
 }
+
 .mb {
     margin-bottom: 64px;
 }
+
 .img-box {
     margin-bottom: 80px;
     overflow: hidden;
 }
+
 .img-y {
     width: 195px;
     height: 95px;
@@ -554,6 +564,7 @@
     margin-bottom: 16px;
     float: left;
 }
+
 .img-y:nth-child(6n) {
     margin-right: 0;
 }
@@ -574,6 +585,7 @@
 
 .swiper-container .swiper-slide {
     position: relative;
+    margin: 0;
 }
 
 .swiper-slide {
@@ -602,9 +614,6 @@
     transform: scale(1);
 }
 
-
-
-
 .swiper-slide .box {
     position: absolute;
     bottom: 0;
@@ -613,7 +622,6 @@
     font-size: 24px;
     height: 100px;
     width: 92%;
-
     background-color: transparent;
     text-align: left;
 }
@@ -632,7 +640,42 @@
     font-size: 24px;
 }
 
+.swiper-shdow {
+    max-width: 1400px;
+    background: url('../images/bg_dahuijiabin.png')no-repeat center;
+    padding-bottom: 110px;
+}
+
+.swiper-main {
+    max-width: 1272px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .swiper-slide .work {
     font-size: 16px;
     color: #fff;
+}
+
+.pagination {
+    position: relative;
+}
+
+.swiper-pagination {
+    top: -70px;
+    left: 42%;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    width: 40px;
+    height: 4px;
+    background: rgba(153, 153, 153, 1);
+    opacity: 1;
+    border-radius: 0;
+    margin-right: 8px;
+    border: none;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background: rgba(193, 57, 57, 1);
 }
