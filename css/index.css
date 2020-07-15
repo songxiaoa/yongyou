@@ -507,12 +507,90 @@
     padding: 64px 64px 0 64px ;
     margin-bottom: 78px !important;
 }
+.assembly-img-box {
+    width:1238px;
+    height:380px;
+    margin: 0 auto 32px;
+}
+.not {
+    margin-bottom: 0;
+}
 .special {
     margin-bottom: 78px !important;
+    width: 1236px;
+    margin: 0 auto;
+}
+.spec-box {
+    overflow: hidden;
+}
+.spec-1 {
+    width:401px;
+    height:300px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    float: left;
+}
+.spec-2 {
+    width: 610px;
+    height: 300px;
+    float: left;
+    margin-right: 16px;
+}
+.no {
+    margin-right: 0;
 }
 .news {
     margin-bottom: 78px !important;
     padding: 0 171px;
+    overflow: hidden;
+}
+.news-left {
+    width:608px !important;
+}
+.news-right {
+    width: 430px !important;
+}
+.n-a {
+    margin-bottom: 16px;
+}
+.n-t {
+    font-size:16px;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:bold;
+    color:#C13939;
+    line-height:22px;
+    margin-bottom: 8px;
+}
+.n-c {
+    font-size:14px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    line-height:20px;
+    text-indent:31px !important;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #D8D8D8;
+}
+.n-more-box {
+    overflow: hidden;
+}
+.n-more {
+    width:100px;
+    height:34px;
+    border-radius:4px;
+    border:1px solid rgba(193,57,57,1);
+    text-align: center;
+    line-height: 34px;
+    font-size:14px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(193,57,57,1);
+    float: right;
+    cursor: pointer;
+}
+.news-img {
+    width:608px;
+    height:402px;
 }
 .more-box {
     text-align: center;
@@ -636,3 +714,53 @@
     font-size: 16px;
     color: #fff;
 }
+
+.atlas {
+    overflow: hidden;
+    width: 1236px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.fl {
+    float: left;
+    width: 820px;
+}
+
+.fr {
+    width: 403px;
+    float: right;
+}
+
+.atlas-img1 {
+    width:507px;
+    height:284px;
+    float: left;
+    margin: 0px 16px 16px 0px;
+}
+
+.atlas-img2 {
+    width:296px;
+    height:284px;
+    float: left;
+    margin-bottom: 16px;
+}
+
+.atlas-img3 {
+    width:299px;
+    height:284px;
+    float: left;
+    margin-right: 16px;
+}
+
+.atlas-img4 {
+    width:504px;
+    height:284px;
+    float: left;
+}
+
+.atlas-img5 {
+    width:403px;
+    height:584px;
+}
+
