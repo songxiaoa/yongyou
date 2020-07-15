@@ -357,12 +357,16 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="pagination">
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <!-- <div class="swiper-button-next swiper-button-white"></div>
+                        <div class="swiper-button-prev swiper-button-white"></div> -->
                     </div>
                 </div>
 
-                <div class="pagination">
-                    <div class="swiper-pagination"></div>
-                </div>
+
                 <div class="assembly">
                     <img src="./images/test/t5.jpg" alt="" style="width: 100%;">
                     <img src="./images/test/t4.jpg" alt="" style="width: 100%;">
@@ -468,12 +472,16 @@
 <script>
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 5,
-        spaceBetween: 30,
+        // spaceBetween: 0,
         centeredSlides: true,
         loop: true,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
     });
 </script>

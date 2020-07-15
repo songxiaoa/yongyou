@@ -583,9 +583,20 @@
     height: 100%;
 }
 
+.swiper-main {
+    overflow: hidden;
+}
+
 .swiper-container .swiper-slide {
     position: relative;
-    margin: 0;
+}
+
+.swiper-container {
+    overflow: visible !important;
+}
+
+.swiper-container .swiper-slide img {
+    width: 100%;
 }
 
 .swiper-slide {
@@ -605,23 +616,29 @@
     -webkit-align-items: center;
     align-items: center;
     transition: 300ms;
-    transform: scale(0.8);
+    transform: scale(1.1);
+    margin-top: 106px;
 }
 
 
 .swiper-slide-active,
 .swiper-slide-duplicate-active {
-    transform: scale(1);
+    transform: scale(1.4);
+    z-index: 1002;
+}
+ .swiper-main .swiper-container .swiper-slide-active .box,  .swiper-main .swiper-container .swiper-slide-duplicate-active .box {
+    background: #C13939;
 }
 
 .swiper-slide .box {
     position: absolute;
     bottom: 0;
     color: #fff;
+    padding-top: 20px;
     padding-left: 20px;
     font-size: 24px;
     height: 100px;
-    width: 92%;
+    width: 100%;
     background-color: transparent;
     text-align: left;
 }
@@ -643,13 +660,12 @@
 .swiper-shdow {
     max-width: 1400px;
     background: url('../images/bg_dahuijiabin.png')no-repeat center;
-    padding-bottom: 110px;
 }
 
 .swiper-main {
     max-width: 1272px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding-bottom: 150px;
 }
 
 .swiper-slide .work {
@@ -658,12 +674,14 @@
 }
 
 .pagination {
+    max-width: 1400px;
     position: relative;
 }
 
 .swiper-pagination {
-    top: -70px;
-    left: 42%;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%) !important;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
