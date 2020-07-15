@@ -149,8 +149,18 @@
                 </div>
                 <div class="plate clear-float">
                     <div class="plate-left">
-                        <div>
+                        <!-- <div>
                             <img src="./images/tu_gaofengduihua.png" alt="">
+                        </div> -->
+                        <div class="plate-swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./images/tu_gaofengduihua.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/tu_gaofengduihua.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/tu_gaofengduihua.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/tu_gaofengduihua.png" alt=""></div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="plate-swiper-pagination"></div>
                         </div>
                     </div>
                     <ul class="plate-right">
@@ -334,27 +344,6 @@
                                         <div class="work">阿里巴巴董事</div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide"><img src="./images/dahuijiabin5.png" alt="">
-                                    <div class="box">
-                                        <span class="xian"></span>
-                                        <div class="name">张建峰</div>
-                                        <div class="work">阿里巴巴董事</div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide"><img src="./images/dahuijiabin5.png" alt="">
-                                    <div class="box">
-                                        <span class="xian"></span>
-                                        <div class="name">张建峰</div>
-                                        <div class="work">阿里巴巴董事</div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide"><img src="./images/dahuijiabin5.png" alt="">
-                                    <div class="box">
-                                        <span class="xian"></span>
-                                        <div class="name">张建峰</div>
-                                        <div class="work">阿里巴巴董事</div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <div class="pagination">
@@ -403,20 +392,34 @@
                 </div>
                 <div class="news">
                     <div class="fl news-left">
-                        <img src="./images/xinwen.png" alt="" class="news-img">
+                        <div class="plate-swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./images/xinwen.png" alt="" class="news-img"></div>
+                                <div class="swiper-slide"><img src="./images/xinwen.png" alt="" class="news-img"></div>
+                                <div class="swiper-slide"><img src="./images/xinwen.png" alt="" class="news-img"></div>
+                                <div class="swiper-slide"><img src="./images/xinwen.png" alt="" class="news-img"></div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="plate-swiper-pagination"></div>
+                        </div>
+
                     </div>
                     <div class="fr news-right">
                         <div class="n-a">
                             <p class="n-t">融合新技术赋能企业转型 商业创新平台将发</p>
-                            <p class="n-c">国家发展改革委、中央网信办近日发布《关于推进“上云用数赋智”行动培育新经济发展实施方案》，以大力培育数字经济新业态，深入推进企业数字化转型。在全新的数字经济时代，数字化、智能化正在加速改变商业世界，人工智能越来越多地走入各种业务与管理场景。在数字化的基础上，智能化成为中国和全球企业与公共组织新的创新焦点。</p>
+                            <p class="n-c">
+                                国家发展改革委、中央网信办近日发布《关于推进“上云用数赋智”行动培育新经济发展实施方案》，以大力培育数字经济新业态，深入推进企业数字化转型。在全新的数字经济时代，数字化、智能化正在加速改变商业世界，人工智能越来越多地走入各种业务与管理场景。在数字化的基础上，智能化成为中国和全球企业与公共组织新的创新焦点。
+                            </p>
                         </div>
                         <div class="n-a">
                             <p class="n-t">沉默的工业数据，如何“开口说话”？</p>
-                            <p class="n-c">当前，以智能化为核心的科技产业变革正在兴起，人工智能技术与各个行业的融合不断加剧，工业制造已逐渐成为人工智能的重点探索方向。新松机器人利用人工智能+5G的巡检机器人，实现了全自动巡检以及异常问题的自主判断；三菱重工与FANUC合作，面向机身钢板打孔、铆接等工序，依托人工智能计算精密、高速加工的最佳条件。</p>
+                            <p class="n-c">
+                                当前，以智能化为核心的科技产业变革正在兴起，人工智能技术与各个行业的融合不断加剧，工业制造已逐渐成为人工智能的重点探索方向。新松机器人利用人工智能+5G的巡检机器人，实现了全自动巡检以及异常问题的自主判断；三菱重工与FANUC合作，面向机身钢板打孔、铆接等工序，依托人工智能计算精密、高速加工的最佳条件。
+                            </p>
                         </div>
                         <div class="n-more-box">
                             <div class="n-more">
-                                更多新闻 + 
+                                更多新闻 +
                             </div>
                         </div>
                     </div>
@@ -522,6 +525,12 @@
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+        },
+    });
+    var swiper = new Swiper('.plate-swiper-container', {
+        pagination: {
+            el: '.plate-swiper-pagination',
+            clickable: true,
         },
     });
 </script>
