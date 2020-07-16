@@ -19,7 +19,9 @@
     <link rel="shortcut icon" href="./favicon.png">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/swiper.min.css">
+    <!-- <link rel="stylesheet" href="./css/swiper.min.css"> -->
+    <link rel="stylesheet" href="./css/idangerous.swiper2_ie.css">
+
     <script>
         function browserRedirect() {
             var sUserAgent = navigator.userAgent.toLowerCase();
@@ -77,7 +79,23 @@
                     <div class="tab"><a href="./ie_index.html">主题大会</a></div>
                     <div class="tab"><a href="./ie_index.html">高峰对话</a></div>
                     <div class="tab"><a href="./ie_index.html">直播看展</a></div>
-                    <div class="tab"><a href="./ie_index.html">专题论坛</a></div>
+                    <div class="tab">
+                        <a class="luntan" style="position: relative;" href="./ie_index.html">专题论坛 <i
+                                class="down"></i></a>
+                        <div class="slide-nav">
+                            <a href="">数智营销专题论坛</a>
+                            <a href="">智能制造专题论坛</a>
+                            <a href="">数智采购专题论坛</a>
+                            <a href="">智能财务专题论坛</a>
+                            <a href="">数智人力专题论坛</a>
+                            <a href="">用友云平台iuap专题论坛</a>
+                            <a href="">国资国企数智化转型专题论坛</a>
+                            <a href="">数智医疗专题论坛</a>
+                            <a href="">YonSuite成长型企业商业创新专题论坛</a>
+                            <a href="">用友云生态与ISV合作专题论坛</a>
+                            <a href="">成长型企业产业链升级专题论坛</a>
+                        </div>
+                    </div>
                     <div class="tab"><a href="./ie_index.html">数智化转型最佳实践</a></div>
                     <div class="tab"><a href="./ie_index.html">大会新闻</a></div>
                 </div>
@@ -149,36 +167,29 @@
                 </div>
                 <div class="plate clear-float">
                     <div class="plate-left">
-                        <!-- <div>
+                        <div>
                             <img src="./images/tu_gaofengduihua.png" alt="">
-                        </div> -->
-                        <div class="plate-swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="./images/tu_gaofengduihua.png" alt=""></div>
-                                <div class="swiper-slide"><img src="./images/tu_gaofengduihua.png" alt=""></div>
-                                <div class="swiper-slide"><img src="./images/tu_gaofengduihua.png" alt=""></div>
-                                <div class="swiper-slide"><img src="./images/tu_gaofengduihua.png" alt=""></div>
+                            <div class="m-b">
+                                <div>畅捷通关爱活动正式开启，助力企业数字</div>
                             </div>
-                            <!-- Add Pagination -->
-                            <div class="plate-swiper-pagination"></div>
                         </div>
                     </div>
                     <ul class="plate-right">
-                        <li>
+                        <li id="plate0">
                             <div class="plate-active">畅捷通关爱活动正式开启，助力企业数字</div>
-                            <div>5月20日，畅捷通第10届以“中小微企业</div>
+                            <div>5月20日，畅捷通第10届以“中小微企业数字化赋能行动”为主题的小微企业关爱活动。</div>
                         </li>
-                        <li>
-                            <div>畅捷通关爱活动正式开启，助力企业数字</div>
-                            <div>5月20日，畅捷通第10届以“中小微企业</div>
+                        <li id="plate1">
+                            <div>用友与智齿科技达成战略合作</div>
+                            <div>今天，用友网络科技股份有限公司（以下简称：用友）与北京智齿博创科技有限公司</div>
                         </li>
-                        <li>
-                            <div>畅捷通关爱活动正式开启，助力企业数字</div>
-                            <div>2020年5月9日，用友网络科技股份有限公司与中国红十字会总平台战略合作签约仪…</div>
+                        <li id="plate2">
+                            <div>用友与中国红十字会总会战略签约</div>
+                            <div>2020年5月9日，用友网络科技股份有限公司与中国红十字会总平台战略合作签约仪式</div>
                         </li>
-                        <li>
-                            <div>畅捷通关爱活动正式开启，助力企业数字</div>
-                            <div>2020年5月9日，用友网络科技股份有限公司与中国红十字会总平台战略合作签约仪…</div>
+                        <li id="plate3">
+                            <div>用友网络发布2020年一季度报</div>
+                            <div>用友网络发布2020年一季度经营业绩，实现营业收入人民币10.89亿元，同比减少</div>
                         </li>
                     </ul>
                 </div>
@@ -344,14 +355,20 @@
                                         <div class="work">阿里巴巴董事</div>
                                     </div>
                                 </div>
+                                <div class="swiper-slide"><img src="./images/dahuijiabin5.png" alt="">
+                                    <div class="box">
+                                        <span class="xian"></span>
+                                        <div class="name">张建峰</div>
+                                        <div class="work">阿里巴巴董事</div>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="pagination"></div>
+                            <div class="arrow-left"></div>
+                            <div class="arrow-right"></div>
                         </div>
-                        <div class="pagination">
-                            <div class="swiper-pagination"></div>
-                        </div>
+                        
                         <!-- Add Arrows -->
-                        <!-- <div class="swiper-button-next swiper-button-white"></div>
-                        <div class="swiper-button-prev swiper-button-white"></div> -->
                     </div>
                 </div>
 
@@ -392,17 +409,13 @@
                 </div>
                 <div class="news">
                     <div class="fl news-left">
-                        <div class="plate-swiper-container">
+                        <!-- <div class="plate-swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide"><img src="./images/xinwen.png" alt="" class="news-img"></div>
-                                <div class="swiper-slide"><img src="./images/xinwen.png" alt="" class="news-img"></div>
-                                <div class="swiper-slide"><img src="./images/xinwen.png" alt="" class="news-img"></div>
-                                <div class="swiper-slide"><img src="./images/xinwen.png" alt="" class="news-img"></div>
                             </div>
-                            <!-- Add Pagination -->
                             <div class="plate-swiper-pagination"></div>
-                        </div>
-
+                        </div> -->
+                        <img src="./images/xinwen.png" alt="" class="news-img">
                     </div>
                     <div class="fr news-right">
                         <div class="n-a">
@@ -510,29 +523,40 @@
         </footer>
     </div>
 </body>
-<script src="./js/jquery.min.js"></script>
-<script src="./js/swiper.min.js"></script>
+<script src="./js/jquery-1.10.1.min.js"></script>
+<!-- <script src="./js/swiper.min.js"></script> -->
+<script src="./js/idangerous.swiper2.js"></script>
+<script src="./js/index.js"></script>
 <script>
     var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 5,
-        // spaceBetween: 0,
+        autoplay: 5000,
+        autoplayDisableOnInteraction: false,
+        slidesPerView: 4.9,
         centeredSlides: true,
+        grabCursor: true,
         loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
+        pagination: '.pagination',
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
     });
-    var swiper = new Swiper('.plate-swiper-container', {
+    var swiper1 = new Swiper('.plate-swiper-container', {
+        autoplay: 5000,
+        autoplayDisableOnInteraction: false,
         pagination: {
             el: '.plate-swiper-pagination',
             clickable: true,
         },
     });
+    $('.arrow-left').on('click', function (e) {
+        e.preventDefault()
+        swiper.swipePrev()
+    })
+    $('.arrow-right').on('click', function (e) {
+        e.preventDefault()
+        swiper.swipeNext()
+    })
 </script>
 
 </html>

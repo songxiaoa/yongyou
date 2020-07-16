@@ -171,7 +171,7 @@ a {
     margin-right: 30px;
 }
 
-.nav-left .tab a {
+.nav-left .tab >a {
     display: block;
     float: left;
     line-height: 80px;
@@ -180,7 +180,54 @@ a {
     font-weight: 500;
     font-size: 18px;
     text-decoration: none;
+    position: relative;
 }
+.nav-left .tab >a:hover .down {
+    width: 10px;
+    height: 7px;
+    background: url('../images/arrow_down_r.png');
+}
+.nav-left >div:nth-child(6):hover .slide-nav{
+    display: block;
+}
+.down{
+    position: absolute;
+    width: 10px;
+    height: 7px;
+    top: 50%;
+    margin-top: -3px;
+    background: url('../images/arrow_down.png');
+    background-size:100% 100% ;
+}
+.tab a:hover{
+    color: #C23C3C;
+}
+.tab{
+    position: relative;
+}
+
+.slide-nav{
+    display: none;
+    padding: 20px;
+    left: -20px;
+    width: 360px;
+    position: absolute;
+    left: 511px;
+    top: 63px;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 1px 5px #ccc;
+}
+
+.slide-nav a{
+    display: block;
+    font-size: 16px;
+    padding: 0 20px;
+    line-height: 1.8;
+    color: #000;
+    text-decoration: none;
+}
+
 
 .yy_btn {
     width: 96px;
