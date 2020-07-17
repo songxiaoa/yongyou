@@ -828,7 +828,15 @@
     overflow: hidden;
     text-align: center;
 }
+.img-box1 {
+    margin-bottom: 80px;
+    overflow: hidden;
+}
 .img-box >div{
+    display: inline-block;
+}
+
+.img-box1 >div{
     display: inline-block;
 }
 
