@@ -750,7 +750,7 @@
     font-weight: 400;
     color: rgba(153, 153, 153, 1);
     line-height: 20px;
-    text-indent: 31px !important;
+    /**text-indent: 31px !important;**/
     padding-bottom: 16px;
     border-bottom: 1px solid #D8D8D8;
 }
