@@ -551,14 +551,50 @@
 }
 
 .special {
-    margin-bottom: 78px !important;
-    width        : 1236px;
-    margin       : 0 auto;
-    overflow     : hidden;
+    margin-bottom : 78px !important;
+    width         : 1236px;
+    margin        : 0 auto;
+    overflow      : hidden;
+    position      : relative;
+    padding-bottom: 40px;
 }
 
 .spec-box {
-    overflow: hidden;
+    overflow : hidden;
+    font-size: 0;
+}
+
+.spec-box>div {
+    display : inline-block;
+    position: relative;
+}
+
+.spec-box .pop {
+    position  : absolute;
+    bottom    : 30px;
+    left      : 0;
+    width     : 100%;
+    background: transparent;
+}
+
+.spec-box .pop p {
+    color       : #fff;
+    padding-left: 40px;
+}
+
+.spec-box .pop p:nth-child(1) {
+    font-size  : 24px;
+    line-height: 38px;
+}
+
+.spec-box .pop p:nth-child(2) {
+    font-size: 18px;
+    color    : #fff;
+    display  : none;
+}
+
+.spec-box>div:hover .pop p:nth-child(2) {
+    display: block;
 }
 
 
@@ -898,9 +934,10 @@
 .swiper-container-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-    bottom : 20px;
-    left   : 77% !important;
-    z-index: 100;
+    bottom   : 0;
+    left     : 50% !important;
+    transform: translateX(-50%);
+    z-index  : 100;
 }
 
 .pagination {
