@@ -572,11 +572,11 @@
         autoplay: 3000,
         autoplayDisableOnInteraction: false,
         centeredSlides: true,
-        grabCursor: true,
         loopedSlides: 5,
         slidesPerView: 'auto',
         loop: true,
         pagination: '.pagination',
+        paginationClickable: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -591,8 +591,9 @@
         swiper.swipeNext()
     })
     var swiper1 = new Swiper('#swiper-container', {
-        // autoplay: 5000,
+        autoplay: 3000,
         autoplayDisableOnInteraction: false,
+        paginationClickable: true,
         pagination: '.plate-swiper-pagination',
     });
 </script>
