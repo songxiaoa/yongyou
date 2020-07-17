@@ -598,7 +598,6 @@
     left      : 0;
     width     : 100%;
     background: transparent;
-<<<<<<< HEAD
     pointer-events: none;
 }
 
@@ -622,8 +621,6 @@
     width: 100%;
     transform: translateY(52px);
     transition: all 0.25s ease;
-=======
->>>>>>> 3b315aed31b278f8c798c52e379c0973abe2c3e0
 }
 
 .spec-box .pop1 .text-inner1 {
@@ -662,7 +659,6 @@
 	transform: scaleY(1);
 }
 
-<<<<<<< HEAD
 .spec-box .pop1 p:nth-child(2) {
     font-size: 18px;
     color: #fff;
@@ -671,12 +667,6 @@
 .spec-box>div:hover .pop .text-inner {
     transform: translateY(0);
     pointer-events: none;
-=======
-.spec-box>div:hover .pop p:nth-child(2) {
-    display: block;
-	
-
->>>>>>> 3b315aed31b278f8c798c52e379c0973abe2c3e0
 }
 .spec-box>div:hover .pop1 .text-inner1 {
     transform: translateY(0);
@@ -689,22 +679,12 @@
     height       : 300px;
     margin-right : 16px;
     margin-bottom: 16px;
-<<<<<<< HEAD
-=======
-    float        : left;
->>>>>>> 3b315aed31b278f8c798c52e379c0973abe2c3e0
 }
 
 
 .spec-2 {
-<<<<<<< HEAD
     width: 610px;
     height: 300px;
-=======
-    width       : 610px;
-    height      : 300px;
-    float       : left;
->>>>>>> 3b315aed31b278f8c798c52e379c0973abe2c3e0
     margin-right: 16px;
 }
 
