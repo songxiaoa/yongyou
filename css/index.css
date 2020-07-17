@@ -147,7 +147,7 @@
     height     : 32px;
     text-align : center;
     font-size  : 34px;
-    font-weight: bold;
+    /**font-weight: bold;**/
     color      : #333333;
     background : url('../images/tb_biaoti_sizi.png')no-repeat center;
 }
@@ -288,7 +288,7 @@
 
 .plate-right li div:first-child {
     margin-bottom: 10px;
-    font-size    : 18px;
+    font-size    : 16px;
     line-height  : 22px;
     color        : #333333;
     font-weight  : 600;
@@ -298,7 +298,7 @@
 }
 
 .plate-right li div:last-child {
-    font-size    : 14px;
+    font-size    : 12px;
     color        : #999999;
     line-height  : 18px;
     text-overflow: ellipsis;
@@ -589,6 +589,7 @@
 .spec-box>div {
     display : inline-block;
     position: relative;
+	transform: 0.5s
 }
 
 .spec-box .pop {
@@ -613,12 +614,13 @@
     font-size: 18px;
     color    : #fff;
     display  : none;
+	transform: scaleY(1);
 }
 
 .spec-box>div:hover .pop p:nth-child(2) {
     display: block;
 	
-	
+
 }
 
 
@@ -629,6 +631,7 @@
     margin-bottom: 16px;
     float        : left;
 }
+
 
 .spec-2 {
     width       : 610px;
@@ -690,7 +693,7 @@
 }
 
 .n-c {
-    font-size     : 14px;
+    font-size     : 13px;
     font-family   : PingFangSC-Regular, PingFang SC;
     font-weight   : 400;
     color         : rgba(153, 153, 153, 1);
