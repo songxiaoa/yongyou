@@ -605,7 +605,29 @@
     pointer-events: none;
 }
 
+.spec-box .pop1 {
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    pointer-events: none;
+}
+
+
+
 .spec-box .pop .text-inner {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    transform: translateY(52px);
+    transition: all 0.25s ease;
+}
+
+.spec-box .pop1 .text-inner1 {
     position: absolute;
     bottom: 30px;
     left: 0;
@@ -619,7 +641,17 @@
     padding-left: 40px;
 }
 
+.spec-box .pop1 p {
+    color: #fff;
+    padding-left: 40px;
+}
+
 .spec-box .pop p:nth-child(1) {
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.spec-box .pop1 p:nth-child(1) {
     font-size: 24px;
     line-height: 38px;
 }
@@ -629,7 +661,16 @@
     color: #fff;
 }
 
+.spec-box .pop1 p:nth-child(2) {
+    font-size: 18px;
+    color: #fff;
+}
+
 .spec-box>div:hover .pop .text-inner {
+    transform: translateY(0);
+    pointer-events: none;
+}
+.spec-box>div:hover .pop1 .text-inner1 {
     transform: translateY(0);
     pointer-events: none;
 }
@@ -640,13 +681,11 @@
     height: 300px;
     margin-right: 16px;
     margin-bottom: 16px;
-    float: left;
 }
 
 .spec-2 {
     width: 610px;
     height: 300px;
-    float: left;
     margin-right: 16px;
 }
 

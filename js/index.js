@@ -11,6 +11,5 @@ function tab(e) {
     var tab = $($(target).find("div").get(0))
     text = tab.text();
     tab.addClass('plate-active');
-   
     $('.m-b div').text(text)
 }
