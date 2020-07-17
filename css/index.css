@@ -865,7 +865,7 @@
 }
 
 .swiper-main {
-    max-width     : 1259px;
+    max-width     : 1150px;
     margin        : 0 auto;
     padding-bottom: 150px;
 }
@@ -944,7 +944,7 @@
     position  : absolute;
     left      : 0;
     text-align: center;
-    bottom    : -669px;
+    bottom    : -625px;
     width     : 100%;
 }
 

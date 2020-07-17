@@ -642,11 +642,12 @@
 <script src="./js/index.js"></script>
 <script>
     var swiper = new Swiper('.swiper-container', {
-        autoplay: 5000,
+        autoplay: 3000,
         autoplayDisableOnInteraction: false,
-        slidesPerView: 4.9,
         centeredSlides: true,
         grabCursor: true,
+        loopedSlides: 5,
+        slidesPerView: 'auto',
         loop: true,
         pagination: '.pagination',
         navigation: {
@@ -667,7 +668,6 @@
         autoplayDisableOnInteraction: false,
         pagination: '.plate-swiper-pagination',
     });
-
 </script>
 
 </html>
