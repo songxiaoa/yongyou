@@ -4,7 +4,7 @@
 }
 
 .page-main {
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -162,9 +162,10 @@
     float: left;
     width: 640px;
     height: 360px;
-    margin-right: 16px;
+    /**margin-right: 16px;**/
     overflow: hidden;
 	box-shadow: 1px 8px 20px #e4e4e4;
+	overflow:hidden;  
 }
 
 .left-img {
@@ -263,13 +264,14 @@
 }
 
 .plate-right {
-    float: left;
-    width: 582px;
+    /**float: left;**/
+    /**width: 582px;**/
     height: 360px;
     padding: 31px 24px;
     background: rgba(249, 249, 249, 1);
     border: 1px solid rgba(236, 236, 236, 1);
 	box-shadow: 1px 8px 20px #e4e4e4;
+	overflow:hidden;  
 }
 
 .plate-right li .plate-active {
