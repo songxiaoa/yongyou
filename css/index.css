@@ -837,8 +837,13 @@
 }
 
 .img-box1 >div{
+	width:194px;
     display: inline-block;
 }
+.img-box1 >div >img{
+	width:194px;
+}
+
 
 .img-y {
     width: 195px;
