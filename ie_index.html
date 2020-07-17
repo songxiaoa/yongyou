@@ -367,7 +367,7 @@
                             <div class="arrow-left"></div>
                             <div class="arrow-right"></div>
                         </div>
-                        
+
                         <!-- Add Arrows -->
                     </div>
                 </div>
@@ -391,14 +391,21 @@
                     <span class="text">专题论坛</span>
                 </div>
                 <div class="special">
-                    <div class="spec-box">
-                        <img src="./images/zhantiluntan_1.png" alt="" class="spec-1">
-                        <img src="./images/zhantiluntan_2.png" alt="" class="spec-1">
-                        <img src="./images/zhantiluntan_3.png" alt="" class="spec-1 no">
-                    </div>
-                    <div class="spec-box">
-                        <img src="./images/zhantiluntan_4.png" alt="" class="spec-2">
-                        <img src="./images/zhantiluntan_5.png" alt="" class="spec-2 no">
+                    <div id="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="spec-box">
+                                    <img src="./images/zhantiluntan_1.png" alt="" class="spec-1">
+                                    <img src="./images/zhantiluntan_2.png" alt="" class="spec-1">
+                                    <img src="./images/zhantiluntan_3.png" alt="" class="spec-1 no">
+                                </div>
+                                <div class="spec-box">
+                                    <img src="./images/zhantiluntan_4.png" alt="" class="spec-2">
+                                    <img src="./images/zhantiluntan_5.png" alt="" class="spec-2 no">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plate-swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -409,12 +416,6 @@
                 </div>
                 <div class="news">
                     <div class="fl news-left">
-                        <!-- <div class="plate-swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="./images/xinwen.png" alt="" class="news-img"></div>
-                            </div>
-                            <div class="plate-swiper-pagination"></div>
-                        </div> -->
                         <img src="./images/xinwen.png" alt="" class="news-img">
                     </div>
                     <div class="fr news-right">
@@ -430,7 +431,7 @@
                                 当前，以智能化为核心的科技产业变革正在兴起，人工智能技术与各个行业的融合不断加剧，工业制造已逐渐成为人工智能的重点探索方向。
                             </p>
                         </div>
-						<div class="n-a" onclick="window.open('#');">
+                        <div class="n-a" onclick="window.open('#');">
                             <p class="n-t">沉默的工业数据，如何“开口说话”？</p>
                             <p class="n-c">
                                 当前，以智能化为核心的科技产业变革正在兴起，人工智能技术与各个行业的融合不断加剧，工业制造已逐渐成为人工智能的重点探索方向。
@@ -547,14 +548,6 @@
             prevEl: '.swiper-button-prev',
         },
     });
-    var swiper1 = new Swiper('.plate-swiper-container', {
-        autoplay: 5000,
-        autoplayDisableOnInteraction: false,
-        pagination: {
-            el: '.plate-swiper-pagination',
-            clickable: true,
-        },
-    });
     $('.arrow-left').on('click', function (e) {
         e.preventDefault()
         swiper.swipePrev()
@@ -563,6 +556,12 @@
         e.preventDefault()
         swiper.swipeNext()
     })
+    var swiper1 = new Swiper('#swiper-container', {
+        autoplay: 5000,
+        autoplayDisableOnInteraction: false,
+        pagination:'.plate-swiper-pagination',
+    });
+ 
 </script>
 
 </html>
