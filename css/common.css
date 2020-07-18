@@ -136,7 +136,7 @@ a {
     position       : absolute;
     top            : 50%;
     left           : 50%;
-    height         : 36px;
+    height         : 43px;
     transform      : translate(-50%, -50%);
     background-size: 100% 100%;
 }
