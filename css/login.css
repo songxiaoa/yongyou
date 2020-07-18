@@ -1,0 +1,180 @@
+.reg-banner {
+    max-width      : 1400px;
+    height         : 300px;
+    margin         : 0 auto;
+    background     : url('../images/banner_zhuce.png')no-repeat;
+    background-size: 100%;
+}
+
+.reg-main {
+    height    : 782px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.reg-main-content {
+    max-width: 1366px;
+    margin   : 0 auto;
+    padding  : 64px 261px 0;
+}
+
+.m-left {
+    width : 400px;
+    height: 100%;
+    float : left;
+}
+
+.m-left i {
+    position       : absolute;
+    width          : 158px;
+    height         : 62px;
+    background     : url('../images/biaoti_1_zhuce@2x.png')no-repeat center;
+    background-size: 100% 100%;
+    top            : 10px;
+    left           : 30px;
+}
+
+.m-l-t {
+    width        : 258px;
+    height       : 153px;
+    margin-bottom: 32px;
+}
+
+.m-l-b {
+    width        : 400px;
+    height       : 120px;
+    margin-bottom: 4px;
+    position     : relative;
+}
+
+.m-left .m-l-b-img {
+    width : 400px;
+    height: 120px;
+}
+
+.m-left .m-l-b-img1 {
+    width     : 158px;
+    height    : 62px;
+    background: url('../images/biaoti_1_zhuce@2x.png')no-repeat center;
+}
+
+.m-left .m-l-b-img2 {
+    width     : 158px;
+    height    : 62px;
+    background: url('../images/biaoti_2_zhuce.png')no-repeat center;
+}
+
+.m-left .m-l-b-img3 {
+    width     : 158px;
+    height    : 62px;
+    background: url('../images/biaoti_3_zhuce.png')no-repeat center;
+}
+
+.m-right {
+    width : 380px;
+    height: 100%;
+    float : right;
+}
+
+.m-r-t {
+    width        : 380px;
+    min-height   : 320px;
+    border-radius: 4px;
+    border       : 1px solid rgba(221, 221, 221, 1);
+    box-sizing   : border-box;
+    position: relative;
+}
+
+.m-r-title {
+    min-height   : 86px;
+    background   : rgba(249, 249, 249, 1);
+    border-radius: 4px 4px 0px 0px;
+    border-bottom: 1px solid #DDDDDD;
+    text-align   : center;
+    line-height  : 86px;
+    font-size    : 20px;
+    font-family  : PingFangSC-Medium, PingFang SC;
+    font-weight  : 500;
+    color        : rgba(102, 102, 102, 1);
+    box-sizing   : border-box;
+}
+
+.m-r-content {
+    padding   : 20px 30px 0px 30px;
+    box-sizing: border-box;
+}
+
+.phone-div {
+    overflow: hidden;
+}
+
+.phone {
+    width     : 218px;
+    height    : 44px;
+    border    : 2px solid rgba(221, 221, 221, 1);
+    float     : left;
+    box-sizing: border-box;
+    padding   : 0 14px;
+}
+
+.slot-code {
+    width        : 100px;
+    height       : 44px;
+    background   : rgba(249, 249, 249, 1);
+    border       : 2px solid rgba(221, 221, 221, 1);
+    float        : right;
+    box-sizing   : border-box;
+    border-left  : 0;
+    text-align   : center;
+    line-height  : 44px;
+    font-size    : 14px;
+    font-family  : PingFangSC-Regular, PingFang SC;
+    font-weight  : 400;
+    color        : rgba(153, 153, 153, 1);
+    cursor       : pointer;
+    margin-bottom: 20px;
+}
+
+.code-div {
+    width    : 320px;
+    /* height: 44px; */
+    overflow : hidden;
+}
+
+.code {
+    width  : 320px;
+    height : 44px;
+    border : 2px solid rgba(221, 221, 221, 1);
+    padding: 0 14px;
+}
+
+.button-div {
+    width        : 320px;
+    height       : 44px;
+    background   : #eb887d;
+    border-radius: 4px;
+    margin       : 20px 0px 40px 0px;
+    text-align   : center;
+    font-size    : 16px;
+    line-height  : 44px;
+    font-family  : PingFangSC-Regular, PingFang SC;
+    font-weight  : 400;
+    color        : rgba(255, 255, 255, 1);
+    cursor       : pointer;
+}
+
+.phone-tip,
+.code-tip {
+    font-size  : 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color      : rgba(224, 44, 32, 1);
+    float      : left;
+    margin     : 10px 0px;
+    display    : none;
+}
+
+.active {
+    background-color: #de3a25;
+    color           : #fff;
+}

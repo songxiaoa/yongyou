@@ -1,0 +1,14 @@
+.banner-img-index {
+    background: url(../images/banner_shuzhihua.png)no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.forum-img {
+    position: absolute;
+    left: 90px;
+    top: 101px;
+}
+.video-box {
+    background:rgba(249,249,249,1);
+    padding: 65px 275px;
+}

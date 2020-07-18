@@ -1,114 +1,140 @@
-/* 
-*/
-
-// ;(function(){
-
-//     jQuery(function($){
-        
-//         $('#login_top').load('register.html #header');
-
-
-//         $('#login_footer').load('01footer.html');
-//     })
-
-// })();
-
 
 ;(function($){
     document.addEventListener('DOMContentLoaded',function(){
+        
+        // 下一步按钮
+        $(".register").click(function(){
+            let reg_user_val = $('#reg_user').val();
+            let reg_company_val = $('#reg_company').val();
+            let reg_post_val = $('#reg_post').val();
+            let reg_email_val = $('#reg_email').val();
+            let reg_checked = $('#agree').is(":checked")
+            console.log(reg_user_val,reg_company_val,reg_post_val,reg_email_val,reg_checked)
+            
+        　　if(reg_user_val== ''){
+    
+                $('.reg_user_error').css({
+                    display:'block'
+                })
 
-        let phone = document.querySelector('#phone');
-        let code = document.querySelector('#code');
-        let btn = document.querySelector('.button-div');
-        let phone_error = document.querySelector('.phone-tip');
-        let code_error = document.querySelector('.code-tip');
-        let num_code = document.querySelector('.slot-code'); 
-
-        // 点击登录
-        btn.onclick = ()=>{
-
-            let _phone = phone.value;
-            let _code = code.value;
-
-            console.log(_phone,_code)
-            // let xhr = new XMLHttpRequest();
-            // let status = [200,304];
-            // xhr.onload = ()=>{
-            //     if(status.indexOf(xhr.status)>=0){
-            //         if(xhr.responseText==='success'){
-            //             // 去首页
-            //             location.href = 'index.html';
-            //         }else if(xhr.responseText === 'fail'){
-            //             // 失败
-            //             error.style.display = 'block';
-            //             error.innerHTML = '用户名或密码不正确';
-            //         }
-            //     }
-            // }
-
-            // xhr.open('post','../api/login.php',true);
-            // // 设置请求头，以便后端接收post数据
-            // xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
-           
-            if(_phone==''||!(/^1[3456789]\d{9}$/.test(_phone))){
-                phone_error.style.display = 'block';
             }else{
-                phone_error.style.display = 'none';   
-                if(_code==''){
-                    code_error.style.display = 'block';
-                }else{
-                    code_error.style.display = 'none';
-                    if(_code!=='123456'){
-                        code_error.style.display = 'block';
-                        code_error.innerHTML = '验证码错误';
-                    }else{
-                        code_error.style.display = 'none';
-                        window.alert('登录成功')
-                        console.log('登录成功',_phone,_code)
-                    }
-                }
-                    
-            } 
-
-        }
-
-        // 电话号码输入触发
-        phone.oninput = ()=>{
-            if(phone.value!==''){
-                $('.slot-code').addClass("active")
-            }else {
-                $('.slot-code').removeClass("active")
+              
+                $('.reg_user_error').css({
+                    display:'none'
+                })
             }
-        }
-        // 发送验证码
-        num_code.onclick = function() {
-        
-            if(phone.value=='') return false
-            if(phone.value&&(/^1[3456789]\d{9}$/.test(phone.value))){
-                $('.phone-tip').css({"display":"none"})
-                var timeClock;
-                function sendCode() {
-                    var timer_num = 60;
-                    timeClock=setInterval(function(){
-                        timer_num--;
-                        $('.slot-code').removeClass("active")
-                        num_code.value = timer_num+'s';
-                        num_code.setAttribute("disabled", true)
-                        if (timer_num == 0) {
-                            clearInterval(timeClock);
-                            $('.slot-code').addClass("active")
-                            num_code.value='发送验证码';
-                            num_code.removeAttribute("disabled")
-                        }
-                    },1000)
-                }
-                sendCode()
-            }else {
-                $('.phone-tip').css({"display":"block"})
-                
+            
+            if(reg_company_val== ''){
+    
+                $('.reg_company_error').css({
+                    display:'block'
+                })
+
+            }else{
+    
+                $('.reg_company_error').css({
+                    display:'none'
+                })
             }
-        }
-        
+
+            if(reg_post_val== ''){
+    
+                $('.reg_post_error').css({
+                    display:'block'
+                })
+
+            }else{
+    
+                $('.reg_post_error').css({
+                    display:'none'
+                })
+            }
+
+            if(reg_email_val== ''){
+    
+                $('.reg_email_error').css({
+                    display:'block'
+                })
+
+            }else if((/^\w+@[a-z0-9]+\.[a-z]+$/i).test(reg_email_val)){
+                // 正确
+                $('.reg_email_error').css({
+                    display:'none'
+                })
+                if(reg_checked){
+                    $('.reg_agree_error').css({display:'none'})
+                    $('.one-bar').addClass('pager-bar-complete')
+                    $('.two-bar').addClass('pager-bar-current')
+                    $('.m-r-p1').text('选择分论坛')
+                    $('#one-content').css({display:'none'})
+                    $('#two-content').css({display:'block'})
+                }else {
+                    $('.reg_agree_error').css({display:'block',float:'none'})
+                }
+            }else {
+                $('.reg_email_error').css({
+                    display:'block'
+                })
+                $('.reg_email_error').text('请输入正确的邮箱')
+            }
+
+            
+        });
+        // 勾选协议
+        $('#agree').click(function(){
+            if($('#agree').is(":checked")){
+                $('.red-bar').addClass('bar-active')
+                // $('.reg_agree_error').css({display:'none'})
+            }else {
+                $('.red-bar').removeClass('bar-active')
+                // $('.reg_agree_error').css({display:'block',float:'none'})
+            }
+        } );
+       
+        //全选/全不选功能
+        $("#all").click(function(){
+            $(".check_item").prop("checked",$(this).prop("checked"));
+        });
+        //单个单选框绑定点击事件
+        $(document).on("click",".check_item",function(){
+            var flag=$(".check_item:checked").length==$(".check_item").length;
+            $("#all").prop("checked",flag);
+        });
+        // 所有勾选触发
+        $('#two-content input:checkbox').click(function(){
+            // 控制进度条高亮
+            if($("#two-content input:checkbox:checked").length){
+                // 只要勾选一个就高亮
+                $('.red-bar-two').addClass('bar-active')
+            }else {
+                $('.red-bar-two').removeClass('bar-active')
+            }
+        })
+         // 提交按钮
+         $('.submit').click(function(){
+            var arr = new Array();
+            $("#two-content .check_item:checked").each(function(i){
+                arr[i] = $(this).val();
+            });
+            if(arr.length>0){
+                $('.m-r-p1').text('注册完成')
+                $('.red-bar').addClass('bar-active')
+                $('.red-bar-two').addClass('bar-active')
+                $('.one-bar').addClass('pager-bar-complete')
+                $('.two-bar').addClass('pager-bar-complete')
+                $('.three-bar').addClass('pager-bar-complete')
+                $('#one-content').css({display:'none'})
+                $('#two-content').css({display:'none'})
+                $('#three-content').css({display:'block'})
+            }
+            console.log(arr,'提交勾选的值');
+        } );
+
+
+
+
+
+
     });
 
 })($);

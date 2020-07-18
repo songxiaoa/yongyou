@@ -21,6 +21,44 @@
     <link rel="stylesheet" href="../css/register.css">
     <script src="../js/jquery.min.js"></script>
     <script src="../js/register.js"></script>
+    <script>
+        function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+                return "mobile";
+            } else {
+                return "pc";
+            }
+        };
+
+        // function isIeBrowser() {
+        //     if (window.ActiveXObject || "ActiveXObject" in window) {
+        //         if (navigator.appName == "Microsoft Internet Explorer" && (navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE9.0" || navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE10.0" || navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE11.0")) {
+        //             return true;
+        //         }
+        //     } else {
+        //         return false;
+        //     }
+        // };
+        var browserType = browserRedirect();
+        // var isIe = isIeBrowser();
+        //isIe && 
+        if (browserType == 'pc') {
+            if (window.navigator.userAgent.indexOf('compatible') != -1) {
+                location.href = "./ie_index.html?v=1.0.1";
+            }
+        } else {
+            location.href = "./noIe_index.html?v=1.0.1";
+        }
+    </script>
 </head>
 
 <body>
@@ -50,21 +88,117 @@
                     </div>
                 </div>
                 <div class="m-right">
+                    <div class="pager">
+                        <div class="pager-bar">
+                            <span class="one-bar pager-bar-current">1</span>
+                            <i class="red-bar"></i>
+                            <span class="two-bar">2</span>
+                            <i class="red-bar-two"></i>
+                            <span class="three-bar">3</span>
+                        </div>
+                    </div>
                     <div class="m-r-t">
-                        <div class="m-r-title">欢迎您登陆用友商业创新大会</div>
-                        <div class="m-r-content">
-                            <div class="phone-div">
-                                <input type="text" id="phone" class="phone" placeholder="请输入手机号码">
-                                <input type="button" class="slot-code" value="发送验证码"></input>
-                                <div class="phone-tip">请输入正确的手机号码</div>
+                        <div class="m-r-title">
+                            <p class="m-r-p0">欢迎您注册用友商业创新大会</p>
+                            <p class="m-r-p1">请您填写以下信息完成注册</p>
+                        </div>
+                        <div class="m-r-content" id="one-content">
+                            <div class="code-div">
+                                <input type="text" id="reg_user"  class="code" placeholder="请输入姓名">
+                                <div class="code-tip reg_user_error">请输入姓名</div>
                             </div>
                             <div class="code-div">
-                                <input type="text" id="code" class="code" placeholder="请输入验证码">
-                                <div class="code-tip">请输入正确的验证码</div>
+                                <input type="text" id="reg_company"  class="code" placeholder="请输入公司名称">
+                                <div class="code-tip reg_company_error">请输入公司名称</div>
                             </div>
-                            <div class="button-div active">
-                                登录
+                            <div class="code-div">
+                                <input type="text" id="reg_post"  class="code" placeholder="请输入职位">
+                                <div class="code-tip reg_post_error">请输入职位</div>
                             </div>
+                            <div class="code-div">
+                                <input type="text" id="reg_email" class="code" placeholder="请输入邮箱">
+                                <div class="code-tip reg_email_error">请输入邮箱</div>
+                            </div>
+                            <div class="agree-b">
+                                <input id="agree" type="checkbox">
+                                <label for="agree">我理解并同意按照用友<a class="color-blue">隐私保护条款</a>和<a class="color-blue">使用条款</a>使用和传递我的个人信息</label>
+                                <div class="code-tip reg_agree_error">请勾选协议</div>
+                            </div>
+                            <div class="btn-bottom">
+                                <div class="button-div active register" >
+                                    下一步
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-r-content is-show" id="two-content">
+                            <div class="check-box">
+                                <input id="market" type="checkbox" class="check_item" value="1">
+                                <div>数智营销专题论坛</div>
+                            </div>
+                            <div class="check-box">
+                                <input id="intelligence" type="checkbox" class="check_item" value="2">
+                                <div>智能智能专题论坛</div>
+                            </div>
+                            <div class="check-box">
+                                <input id="purchase" type="checkbox" class="check_item" value="3">
+                                <div>数值采购专题论坛</div>
+                            </div>
+                            <div class="check-box">
+                                <input id="sale" type="checkbox" class="check_item" value="4">
+                                <div>智能财务专题论坛</div>
+                            </div>
+                            <div class="check-box">
+                                <input id="finance" type="checkbox" class="check_item" value="5">
+                                <div>数智人力专题论坛</div>
+                            </div>
+                            <div class="check-box">
+                                <input id="iuap" type="checkbox" class="check_item" value="6">
+                                <div>用友云平台iuap专题论坛</div>
+                            </div>
+                            <div class="check-box">
+                                <input id="seo" type="checkbox" class="check_item" value="7">
+                                <div>国资国企数智化转型专题论坛</div>
+                            </div>
+                            <div class="check-box">
+                                <input id="care" type="checkbox" class="check_item" value="8">
+                                <div>数智医疗专题论坛</div>
+                            </div>
+                            <div class="check-box">
+                                <input id="business" type="checkbox" class="check_item" value="9">
+                                <div>YonSuite成长型企业商业创新专题论</div>
+                            </div>
+                            <div class="check-box">
+                                <input id="isv" type="checkbox" class="check_item" value="10">
+                                <div>用友云生态与ISV合作专题论坛</div>
+                            </div>
+                            <div class="check-box">
+                                <input id="chain1" type="checkbox" class="check_item" value="11">
+                                <div>成长型企业产业链升级专题论坛</div>
+                            </div>
+                            <div class="check-box">
+                                <input id="chain2" type="checkbox" class="check_item" value="12">
+                                <div>成长型企业产业链升级专题论坛</div>
+                            </div>
+                            <div class="check-box">
+                                <input id="chain3" type="checkbox" class="check_item" value="13">
+                                <div>成长型企业产业链升级专题论坛</div>
+                            </div>
+                            <div class="check-box">
+                                <input id="all" type="checkbox">
+                                <div>全部</div>
+                            </div>
+                            <div class="btn-bottom">
+                                <div class="button-div active submit" >
+                                    提交
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-r-content is-show" id="three-content">
+                            <div class="sucess-icon-box">
+                                
+                            </div>
+                            <div class="success-title">您已成功报名</div>
+                            <div class="hello">欢迎来到2020商业创新大会！</div>
                         </div>
                     </div>
                 </div>
