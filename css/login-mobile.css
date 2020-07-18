@@ -1,0 +1,132 @@
+html,body{height: 100%;}
+#box{height: 100%;overflow-x: hidden;}
+#header{
+    height: 90px;
+    background-color: #fff;
+    position: relative;
+}
+.header-img {
+    display: inline-block;
+    width: 480px;
+    height: 45px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.reg-banner {
+    width: 100%;
+    height: 280px;
+}
+.reg-banner-img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+#main{
+ 
+}
+.m-r-t {
+    top: -32px;
+    padding: 32px;
+    margin: 0px 32px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid rgba(221, 221, 221, 1);
+    background-color: #fff;
+    position: relative;
+}
+
+.m-r-title {
+    min-height   : 102px;
+    background   : #fff;
+    border-radius: 4px 4px 0px 0px;
+    text-align   : center;
+    line-height  : 102px;
+    font-size    : 38px;
+    font-family  : PingFangSC-Medium, PingFang SC;
+    font-weight  : 500;
+    color        : #000;
+    box-sizing   : border-box;
+    margin-bottom: 32px;
+}
+
+.m-r-content {
+    box-sizing: border-box;
+}
+
+.phone-div {
+    overflow: hidden;
+}
+
+.phone {
+    width: 60%;
+    height    : 84px;
+    border    : 2px solid rgba(221, 221, 221, 1);
+    float     : left;
+    box-sizing: border-box;
+    padding   : 0 14px;
+    font-size: 30px;
+}
+
+.slot-code {
+    width: 40%;
+    height       : 84px;
+    background   : rgba(249, 249, 249, 1);
+    border       : 2px solid rgba(221, 221, 221, 1);
+    float        : right;
+    box-sizing   : border-box;
+    border-left  : 0;
+    text-align   : center;
+    line-height  : 84px;
+    font-size    : 30px;
+    font-family  : PingFangSC-Regular, PingFang SC;
+    font-weight  : 400;
+    color        : rgba(153, 153, 153, 1);
+    cursor       : pointer;
+    margin-bottom: 16px;
+}
+
+.code-div {
+    width: 100%;
+    overflow : hidden;
+}
+
+.code {
+    width  : 100%;
+    height : 84px;
+    border : 2px solid rgba(221, 221, 221, 1);
+    padding: 0 14px;
+    font-size: 30px;
+}
+
+.button-div {
+    width        : 100%;
+    height       : 84px;
+    background   : #eb887d;
+    border-radius: 4px;
+    margin       : 20px 0px 40px 0px;
+    text-align   : center;
+    font-size    : 30px;
+    line-height  : 84px;
+    font-family  : PingFangSC-Regular, PingFang SC;
+    font-weight  : 400;
+    color        : rgba(255, 255, 255, 1);
+    cursor       : pointer;
+}
+
+.phone-tip,
+.code-tip {
+    font-size  : 30px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color      : rgba(224, 44, 32, 1);
+    float      : left;
+    margin     : 10px 0px;
+    display    : none;
+}
+
+.active {
+    background-color: #de3a25;
+    color           : #fff;
+}
