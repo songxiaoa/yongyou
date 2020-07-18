@@ -282,7 +282,7 @@
     margin-right: 16px;
     cursor: pointer;
 }
-.check-box > div {
+.check-box > label {
     float: left;
     height:18px;
     font-size:14px;
@@ -291,6 +291,7 @@
     color:rgba(153,153,153,1);
     line-height:18px;
     cursor: pointer;
+    user-select: none;
 }
 .sucess-icon-box {
     width:45px;
