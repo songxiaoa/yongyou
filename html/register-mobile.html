@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" id="vp"/>
+    <title>2020商业创新大会 —— 商业创新，如此便捷</title>
+    <link rel="shortcut icon" href="../favicon.png">
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/register-mobile.css" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/register-mobile.js"></script>
+    <script>
+    var wd = document.documentElement.clientWidth*window.devicePixelRatio/10;
+    
+    document.getElementsByTagName("html")[0].style.fontSize = wd + "px";
+    var scale = 1/window.devicePixelRatio;
+    var mstr = 'initial-scale='+ scale +', maximum-scale='+ scale +', minimum-scale='+ scale +', user-scalable=no';
+    document.getElementById("vp").content = mstr;
+</script>
+</head>
+<body>
+    <div id="box">
+        <div id="header">
+            <img src="../images/logo_dahui.png" alt="" class="header-img">
+        </div>
+        <!-- 轮播图 -->
+        <div class="reg-banner">
+            <img src="../images/banner_zhuce.png" alt="" class="reg-banner-img">
+        </div>
+        <div id="main">
+            <div class="top">
+                <div class="pager">
+                    <div class="pager-bar">
+                        <span class="one-bar pager-bar-current">1</span>
+                        <i class="red-bar"></i>
+                        <span class="two-bar">2</span>
+                        <i class="red-bar-two"></i>
+                        <span class="three-bar">3</span>
+                    </div>
+                </div>
+            </div>
+            <div class="m-r-t">
+                <div class="m-r-title">
+                    <p class="m-r-p0">欢迎您注册用友商业创新大会</p>
+                    <p class="m-r-p1">请您填写以下信息完成注册</p>
+                </div>
+                <div class="m-r-content" id="one-content">
+                    <div class="code-div">
+                        <input type="text" id="reg_user"  class="code" placeholder="请输入姓名">
+                        <div class="code-tip reg_user_error">请输入姓名</div>
+                    </div>
+                    <div class="code-div">
+                        <input type="text" id="reg_company"  class="code" placeholder="请输入公司名称">
+                        <div class="code-tip reg_company_error">请输入公司名称</div>
+                    </div>
+                    <div class="code-div">
+                        <input type="text" id="reg_post"  class="code" placeholder="请输入职位">
+                        <div class="code-tip reg_post_error">请输入职位</div>
+                    </div>
+                    <div class="code-div">
+                        <input type="text" id="reg_email" class="code" placeholder="请输入邮箱">
+                        <div class="code-tip reg_email_error">请输入邮箱</div>
+                    </div>
+                    <div class="agree-b">
+                        <input id="agree" type="checkbox">
+                        <label for="agree">我理解并同意按照用友<a class="color-blue">隐私保护条款</a>和<a class="color-blue">使用条款</a>使用和传递我的个人信息</label>
+                        <div class="code-tip reg_agree_error">请勾选协议</div>
+                    </div>
+                    <!-- <div class="btn-bottom">
+                        <div class="button-div active register" >
+                            下一步
+                        </div>
+                    </div> -->
+                </div>
+                <div class="m-r-content is-show" id="two-content">
+                    <div class="check-box">
+                        <input id="market" type="checkbox" class="check_item" value="1">
+                        <label for="market">数智营销专题论坛</label>
+                    </div>
+                    <div class="check-box">
+                        <input id="intelligence" type="checkbox" class="check_item" value="2">
+                        <label for="intelligence">智能智能专题论坛</label>
+                    </div>
+                    <div class="check-box">
+                        <input id="purchase" type="checkbox" class="check_item" value="3">
+                        <label for="purchase">数值采购专题论坛</label>
+                    </div>
+                    <div class="check-box">
+                        <input id="sale" type="checkbox" class="check_item" value="4">
+                        <label for="sale">智能财务专题论坛</label>
+                    </div>
+                    <div class="check-box">
+                        <input id="finance" type="checkbox" class="check_item" value="5">
+                        <label for="finance">数智人力专题论坛</label>
+                    </div>
+                    <div class="check-box">
+                        <input id="iuap" type="checkbox" class="check_item" value="6">
+                        <label for="iuap">用友云平台iuap专题论坛</label>
+                    </div>
+                    <div class="check-box">
+                        <input id="seo" type="checkbox" class="check_item" value="7">
+                        <label for="seo">国资国企数智化转型专题论坛</label>
+                    </div>
+                    <div class="check-box">
+                        <input id="care" type="checkbox" class="check_item" value="8">
+                        <label for="care">数智医疗专题论坛</label>
+                    </div>
+                    <div class="check-box">
+                        <input id="business" type="checkbox" class="check_item" value="9">
+                        <label for="business">YonSuite成长型企业商业创新专题论</label>
+                    </div>
+                    <div class="check-box">
+                        <input id="isv" type="checkbox" class="check_item" value="10">
+                        <label for="isv">用友云生态与ISV合作专题论坛</label>
+                    </div>
+                    <div class="check-box">
+                        <input id="chain1" type="checkbox" class="check_item" value="11">
+                        <label for="chain1">成长型企业产业链升级专题论坛</label>
+                    </div>
+                    <div class="check-box">
+                        <input id="chain2" type="checkbox" class="check_item" value="12">
+                        <label for="chain2">成长型企业产业链升级专题论坛</label>
+                    </div>
+                    <div class="check-box">
+                        <input id="chain3" type="checkbox" class="check_item" value="13">
+                        <label for="chain3">成长型企业产业链升级专题论坛</label>
+                    </div>
+                    <div class="check-box">
+                        <input id="all" type="checkbox">
+                        <label for="all">全部</label>
+                    </div>
+                </div>
+                <div class="m-r-content is-show" id="three-content">
+                    <div class="sucess-icon-box">
+                        
+                    </div>
+                    <div class="success-title">您已成功报名</div>
+                    <div class="hello">欢迎来到2020商业创新大会！</div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="btn register">下一步</div>
+            <div class="btn submit">提交</div>
+        </div>
+    </div>
+</body>
+</html>

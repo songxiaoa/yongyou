@@ -1,0 +1,316 @@
+html,body{height: 100%;}
+#box{height: 100%;overflow-x: hidden;}
+#header{
+    height: 90px;
+    background-color: #fff;
+    position: relative;
+}
+.header-img {
+    display: inline-block;
+    width: 480px;
+    height: 45px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.reg-banner {
+    width: 100%;
+    height: 280px;
+}
+.reg-banner-img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+#main{
+    /* flex:1; */
+    margin-bottom: 128px;
+}
+.top {
+    position: relative;
+    height: 118px;
+}
+.m-r-t {
+    padding: 32px;
+    margin:0px 32px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid rgba(221, 221, 221, 1);
+    position: relative;
+}
+
+.m-r-title {
+    min-height: 86px;
+    border-radius: 4px 4px 0px 0px;
+    text-align: center;
+    font-family: PingFangSC-Medium, PingFang SC;
+    box-sizing: border-box;
+    margin-bottom: 32px;
+}
+
+.m-r-p0 {
+    font-size: 38px;
+    text-align: left;
+    font-weight: 500;
+    line-height: 38px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.m-r-p1 {
+    font-size: 20px;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgba(102, 102, 102, 1);
+}
+
+.m-r-content {
+    /* padding: 20px 30px 0px 30px; */
+    box-sizing: border-box;
+}
+
+.phone-div {
+    overflow: hidden;
+}
+
+.phone {
+    width: 100%;
+    height: 44px;
+    border: 2px solid rgba(221, 221, 221, 1);
+    float: left;
+    box-sizing: border-box;
+    padding: 0 14px;
+}
+
+.slot-code {
+    width: 100px;
+    height: 44px;
+    background: rgba(249, 249, 249, 1);
+    border: 2px solid rgba(221, 221, 221, 1);
+    float: right;
+    box-sizing: border-box;
+    border-left: 0;
+    text-align: center;
+    line-height: 44px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.code-div {
+    width: 100%;
+    /* height: 44px; */
+    overflow: hidden;
+    font-size: 38px !important;
+}
+
+.code {
+    width: 100%;
+    height: 84px;
+    border: 2px solid #ccc;
+    padding: 0 14px;
+    font-size: 30px !important;
+}
+
+.button-div {
+    width: 100px;
+    height: 44px;
+    background: linear-gradient(90deg, rgba(209, 32, 29, 1) 0%, rgba(225, 63, 39, 1) 100%);
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    line-height: 44px;
+
+}
+
+.phone-tip,
+.code-tip {
+    font-size: 30px;
+    font-weight: 400;
+    color: rgba(224, 44, 32, 1);
+    float: left;
+    margin-top: 10px ;
+    display: none;
+}
+.pager {
+    padding: 0 5px;
+    position: absolute;
+    top: 58px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pager-bar {
+    width: 364px;
+    height: 1px;
+    background: #DDDDDD;
+    position: relative;
+}
+/* 进度条线样式 */
+.red-bar {
+    display: block;
+    width: 116px;
+    height: 2px;
+    background: #ccc;
+    position: absolute;
+    left: 44px;
+    top:0;
+}
+.red-bar-two {
+    display: block;
+    width: 116px;
+    height: 2px;
+    background: #ccc;
+    position: absolute;
+    left: 204px;
+    top:0;
+}
+/* 线高亮 */
+.bar-active {
+    background: #C13939;
+}
+.pager-bar span {
+    position: absolute;
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    top: -22px;
+    text-align: center;
+    background: #fff url('../images/quan_wxz.png')no-repeat;
+}
+
+.pager-bar .one-bar {
+    left: 0;
+}
+
+.pager-bar .two-bar {
+    left: 44%;
+}
+
+.pager-bar .three-bar {
+    right: 0;
+}
+/* 当前高亮样式 */
+.pager-bar .pager-bar-current {
+    background: #fff url('../images/quan_xuanzhong.png')no-repeat;
+    color: #fff;
+}
+/* 完成的样式 */
+.pager-bar .pager-bar-complete {
+    background: #C13939;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.m-r-content>div {
+    margin-bottom: 32px;
+}
+
+.m-r-content .btn-bottom {
+    position: absolute;
+    padding-top: 17px;
+    padding-right: 30px;
+    margin-bottom: 0px;
+    bottom: 0;
+    left: 0;
+    width: 377px;
+    height: 78px;
+    text-align: right;
+    background: rgba(249, 249, 249, 1);
+}
+.check-box {
+    margin-bottom: 16px !important;
+    overflow: hidden;
+}
+.check-box > input {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-top: 2px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+.check-box > label {
+    float: left;
+    font-size:30px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    cursor: pointer;
+    user-select: none;
+}
+.sucess-icon-box {
+    width:45px;
+    height:45px;
+    background:  url('../images/gou.png')no-repeat;
+    border-radius: 50%;
+    margin: 0 auto !important;
+}
+.success-title {
+    font-size:38px;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:500;
+    color:rgba(193,57,57,1);
+    text-align: center;
+    margin-top: 24px;
+}
+.hello {
+    font-size:30px;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:500;
+    color:#666;
+    text-align: center;
+}
+.is-show {
+    display: none;
+}
+.agree-b {
+    overflow: hidden;
+    margin-bottom: 0 !important;
+}
+
+.agree-b label {
+    float: left;
+    font-size: 30px;
+    color: #999999;
+    width: 90%;
+    margin-left: 32px;
+}
+
+.agree-b input {
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+.color-blue {
+    color: #00A0FF;
+    text-decoration: underline !important;
+}
+
+#footer{
+    width: 100%;
+    height: 96px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.btn {
+    width: 100%;
+    height: 100%;
+    background: #C13939;
+    color: #fff;
+    text-align: center;
+    line-height: 96px;
+}
+.submit {
+    display: none;
+}
