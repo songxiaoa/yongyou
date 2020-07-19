@@ -690,6 +690,7 @@
     margin-bottom: 16px;
 	background:#000;
 	overflow:hidden;
+	cursor: pointer;
 }
 .spec-1 {
     width: 401px;
@@ -705,6 +706,7 @@
     margin-right: 16px;
 	background:#000;
 	overflow:hidden;
+	cursor: pointer;
 }
 
 .spec-2 {
@@ -722,7 +724,7 @@
 	opacity:0.6; filter: alpha(opacity=60);
 	transition:0.6s;
 }
-
+/**
 .spec-1-t:hover .spec-1{
     transform: scale(1.024);
     transition: transform 0.4s cubic-bezier(0, 0, 0.81, 1.46);
@@ -731,7 +733,7 @@
     transform: scale(1.024);
     transition: transform 0.4s cubic-bezier(0, 0, 0.81, 1.46);
 }
-
+**/
 .no {
     margin-right: 0;
 }
