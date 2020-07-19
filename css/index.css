@@ -630,9 +630,10 @@
     position: absolute;
     bottom: 30px;
     left: 0;
-    width: 100%;
+    width: 110%;
     transform: translateY(52px);
     transition: all 0.25s ease;
+	margin-left:-20px;
 }
 
 .spec-box .pop p {
@@ -677,19 +678,53 @@
     pointer-events: none;
 }
 
-
+.spec-1-t {
+    width: 401px;
+    height: 300px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+	background:#000;
+	overflow:hidden;
+}
 .spec-1 {
     width: 401px;
     height: 300px;
     margin-right: 16px;
     margin-bottom: 16px;
+	opacity:0.8; filter: alpha(opacity=80);
 }
 
+.spec-2-t {
+    width: 610px;
+    height: 300px;
+    margin-right: 16px;
+	background:#000;
+	overflow:hidden;
+}
 
 .spec-2 {
     width: 610px;
     height: 300px;
     margin-right: 16px;
+	opacity:0.8; filter: alpha(opacity=80);
+}
+
+.spec-2-t:hover .spec-2{
+	opacity:0.6; filter: alpha(opacity=60);
+	transition:0.6s;
+}
+.spec-1-t:hover .spec-1{
+	opacity:0.6; filter: alpha(opacity=60);
+	transition:0.6s;
+}
+
+.spec-1-t:hover .spec-1{
+    transform: scale(1.024);
+    transition: transform 0.4s cubic-bezier(0, 0, 0.81, 1.46);
+}
+.spec-2-t:hover .spec-2{
+    transform: scale(1.024);
+    transition: transform 0.4s cubic-bezier(0, 0, 0.81, 1.46);
 }
 
 .no {
