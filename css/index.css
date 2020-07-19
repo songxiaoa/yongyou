@@ -748,6 +748,7 @@
     width: 608px !important;
     height: 402px;
     overflow: hidden;
+	cursor: pointer;
 }
 .daigo{
     width: 100%;
@@ -756,8 +757,8 @@
     height:80px;
     line-height: 80px;
     left: 0;
-    background-color:#999;
-    opacity: 0.3;
+    background-color:#cecece;
+    opacity: 0.8;
     box-sizing: border-box;
     overflow: hidden;
     padding: 0 16px;
@@ -841,8 +842,9 @@
     font-size: 14px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
-    color: rgba(193, 57, 57, 1);
+    color: rgba(255, 255, 255);
     float: right;
+	background-color: #d1201d;
     cursor: pointer;
 }
 .n-more-video {
@@ -860,8 +862,9 @@
     cursor: pointer;
     user-select: none;
     padding: 8px;
-    color: #D1201D;
-    background-color: #fff;
+    color: #ffffff;
+    background-color: #D1201D;
+	font-size: 14px;
 }
 .n-more-video span:hover {
     background-image: linear-gradient(90deg, #E13F27 0%, #E13F27 100%);
