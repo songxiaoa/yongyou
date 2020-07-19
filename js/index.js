@@ -33,7 +33,7 @@ function tab(e) {
 var player1 = new Txplayer({
   containerId: 'c_video_container',
   vid: 'j3117wy6h8p',
-  width: '640px',
-  height: '360px'
+  width: '860px',
+  height: '500px'
 });
 
