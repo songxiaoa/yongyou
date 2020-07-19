@@ -770,6 +770,15 @@
 .r-page {
     float: right;
 }
+#swiper-container2 {
+    position: relative;
+}
+.plate-swiper-pagination2 {
+    position: absolute;
+    bottom: -371px;
+    right: 16px;
+}
+
 @media (min-width: 0) and (max-width: 1400px) {
     .news {
         width: 1300px;
