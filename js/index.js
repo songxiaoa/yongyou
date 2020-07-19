@@ -12,4 +12,5 @@ function tab(e) {
     text = tab.text();
     tab.addClass('plate-active');
     $('.m-b div').text(text)
+    // $('.plate-cont').html()
 }

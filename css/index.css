@@ -235,7 +235,9 @@
     left: 0;
     background: url('../images/shijian_dahui.png')no-repeat center;
 }
-
+.video-one {
+    display: none;
+}
 .replace-list>ul>li .jiudian_dahui {
     position: absolute;
     height: 18px;
@@ -773,7 +775,17 @@
     float: right;
     cursor: pointer;
 }
-
+.n-more-video {
+    margin: 32px;
+    text-align: center;
+    line-height: 34px;
+    /* font-size: 14px; */
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(193, 57, 57, 1);
+    cursor: pointer;
+    user-select: none;
+}
 .n-more:hover {
     background-image: linear-gradient(90deg, #E13F27 0%, #E13F27 100%);
     color: #fff;
