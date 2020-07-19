@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="./css/index.css">
     <!-- <link rel="stylesheet" href="./css/swiper.min.css"> -->
     <link rel="stylesheet" href="./css/idangerous.swiper2_ie.css">
-
     <script>
         function browserRedirect() {
             var sUserAgent = navigator.userAgent.toLowerCase();
@@ -166,16 +165,16 @@
                 </div>
                 <div class="plate clear-float">
                     <div class="plate-left">
-                        <div class="plate-cont">
+                        <div id="container">
                             <!-- <img src="./images/tu_gaofengduihua.png" alt="">
                             <div class="m-b">
                                 <div>畅捷通关爱活动正式开启，助力企业数字</div>
                             </div> -->
-                            <video width="640" height="360" controls  poster="./images/tu_gaofengduihua.png">
-                                <source src="./images/video/movie.ogg"  type="video/mp4">
-                                <source src="./images/video/movie.ogg"  type="video/ogg">
-                                您的浏览器不支持 HTML5 video 标签。
-                            </video>
+                            <iframe  
+                                class="default-css" 
+                                src="https://v.qq.com/txp/iframe/player.html?vid=a00221hqpko" 
+                                allowFullScreen="true"
+                            ></iframe>
                         </div>
                     </div>
                     <ul class="plate-right">
@@ -656,6 +655,7 @@
         paginationClickable: true,
         pagination: '.plate-swiper-pagination',
     });
+
 </script>
 
 </html>
