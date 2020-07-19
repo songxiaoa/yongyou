@@ -235,9 +235,7 @@
     left: 0;
     background: url('../images/shijian_dahui.png')no-repeat center;
 }
-.video-one {
-    display: none;
-}
+
 .replace-list>ul>li .jiudian_dahui {
     position: absolute;
     height: 18px;
