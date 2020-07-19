@@ -593,15 +593,12 @@
 .spec-box {
     overflow: hidden;
     font-size: 0;
-	
 }
 
 .spec-box>div {
     display: inline-block;
     position: relative;
     transform: 0.5s;
-	pointer-events: auto;
-
 }
 
 .spec-box .pop {
@@ -610,7 +607,6 @@
     left: 0;
     width: 100%;
     background: transparent;
-    pointer-events: none;
 }
 
 .spec-box .pop1 {
@@ -621,7 +617,7 @@
     left: 0;
     width: 100%;
     background: transparent;
-    pointer-events: none;
+	pointer-events: none;
 }
 
 
@@ -633,6 +629,7 @@
     width: 100%;
     transform: translateY(52px);
     transition: all 0.25s ease;
+	pointer-events: none;
 }
 
 .spec-box .pop1 .text-inner1 {
@@ -643,6 +640,7 @@
     transform: translateY(52px);
     transition: all 0.25s ease;
 	margin-left:-20px;
+	pointer-events: none;
 }
 
 .spec-box .pop p {
@@ -682,9 +680,13 @@
     pointer-events: none;
 }
 
-.spec-box>div:hover .pop1 .text-inner1 {
+.spec-1-t:hover + .pop1>div {
 	transform: translateY(0);
-	pointer-events: auto;
+	pointer-events: none;
+}
+.spec-2-t:hover + .pop1>div {
+	transform: translateY(0);
+	pointer-events: none;
 }
 
 
@@ -724,6 +726,8 @@
 .spec-2:hover {
 	opacity:0.6; filter: alpha(opacity=60);
 	transition:0.6s;
+	
+	
 }
 .spec-1:hover {
 	opacity:0.6; filter: alpha(opacity=60);
