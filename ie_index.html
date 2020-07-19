@@ -188,7 +188,7 @@
                     </ul>
                 </div>
 				<div class="n-more-video">
-                    更多精彩视频 +
+                    <span>更多精彩视频 +</span>
                 </div>
             </div>
             <div class="conten-bg">
@@ -489,7 +489,29 @@
                 </div>
                 <div class="news">
                     <div class="fl news-left">
-                        <img src="./images/xinwen.png" alt="" class="news-img">
+                        <div id="swiper-container2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div style="position: relative;">
+                                        <img src="./images/xinwen.png" alt="" class="news-img">
+                                        <div class="daigo">
+                                            <div class="l-title">商业创新平台（BIP）：商业创新 如此便捷</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div style="position: relative;">
+                                        <img src="./images/zhuanti_yingxiao.png" alt="" class="news-img">
+                                        <div class="daigo">
+                                            <div class="l-title">商业创新 如此便捷｜2020商业创新大会即刻启航</div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="plate-swiper-pagination2"></div>
+                        </div>
                     </div>
                     <div class="fr news-right">
                         <div class="n-a" onclick="window.open('https://mp.weixin.qq.com/s/6gxHWr6dxOd_z3oqV332NA');">
@@ -660,6 +682,12 @@
         autoplayDisableOnInteraction: false,
         paginationClickable: true,
         pagination: '.plate-swiper-pagination',
+    });
+    var swiper2 = new Swiper('#swiper-container2', {
+        autoplay: 6000,
+        autoplayDisableOnInteraction: false,
+        paginationClickable: true,
+        pagination: '.plate-swiper-pagination2',
     });
 </script>
 
