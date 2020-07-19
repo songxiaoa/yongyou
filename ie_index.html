@@ -177,14 +177,7 @@
                             <div>2020商业创新大会云上看展</div>
                             <div>走进数智企业体验馆，开启数智之旅</div>
                         </li>
-                        <li id="plate2" data-vid="k3081bcjtuu">
-                            <div>用友与中国红十字会总会战略签约</div>
-                            <div>2020年5月9日，用友网络科技股份有限公司与中国红十字会总平台战略合作签约仪式</div>
-                        </li>
-                        <li id="plate3" data-vid="g3081s6cj0l">
-                            <div>用友网络发布2020年一季度报</div>
-                            <div>用友网络发布2020年一季度经营业绩，实现营业收入人民币10.89亿元，同比减少</div>
-                        </li>
+                
                     </ul>
                 </div>
 				<div class="n-more-video">
@@ -318,7 +311,7 @@
                             <div class="swiper-slide">
                                 <div class="spec-box">
                                     <div>
-										<div class="spec-1-t">
+										<div class="spec-1-t" id="zhuanti1">
 											<img src="./images/zhuanti_yingxiao.png" alt="" class="spec-1">
 										</div>
                                         <div class="pop1" style="bottom: 30px;" >
@@ -653,6 +646,11 @@
 <script src="./js/idangerous.swiper2.js"></script>
 <script src="./js/index.js"></script>
 <script>
+$(".spec-1-t").hover(function(){
+
+    $(".text-inner1").css("transform","translateY(0)");
+});
+
     var swiper = new Swiper('.swiper-container', {
         autoplay: 6000,
         autoplayDisableOnInteraction: false,
@@ -677,11 +675,19 @@
         swiper.swipeNext()
     })
     var swiper1 = new Swiper('#swiper-container', {
-        //autoplay: 8000,
+        autoplay: 5000,
         autoplayDisableOnInteraction: false,
         paginationClickable: true,
+		loop: true,
         pagination: '.plate-swiper-pagination',
     });
+	
+	$('#swiper-container').mouseenter(function() {
+		swiper1.stopAutoplay();
+		}).mouseleave(function() {
+		swiper1.startAutoplay();
+	})
+
     var swiper2 = new Swiper('#swiper-container2', {
         // autoplay: 6000,
         autoplayDisableOnInteraction: false,
