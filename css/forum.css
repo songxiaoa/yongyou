@@ -10,5 +10,43 @@
 }
 .video-box {
     background:rgba(249,249,249,1);
-    padding: 65px 275px;
+    padding: 65px 275px 0px;
+    /* position: relative; */
+}
+.video-div {
+    width: 816px;
+    height: 425px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+.video-title {
+    font-size:24px;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    line-height:24px;
+    padding: 24px 0 64px 20px;
+}
+.market .market-img{
+    display: inline-block;
+    width: 100%;
+}
+.swiper-shdow {
+    background: none;
+}
+.img-box {
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+.img-box div {
+    width:296px;
+    height:222px;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 12px;
+}
+.tuijian-1, .tuijian-2,.tuijian-3,.tuijian-4{
+    display: inline-block;
+    width:296px;
+    height:222px;
 }

@@ -22,7 +22,7 @@
     <!-- <link rel="stylesheet" href="./css/swiper.min.css"> -->
     <link rel="stylesheet" href="../css/idangerous.swiper2_ie.css">
     <link rel="stylesheet" href="../css/forum.css">
-
+    <script src='http://vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>
     <script>
         function browserRedirect() {
             var sUserAgent = navigator.userAgent.toLowerCase();
@@ -60,6 +60,12 @@
         } else {
             location.href = "./noIe_index.html?v=1.0.1";
         }
+        var player = new Txplayer({
+            containerId: 'video_container',
+            vid: 'j311896butu',
+            width: '816px',
+            height: '425px',
+        });
     </script>
 </head>
 
@@ -121,52 +127,20 @@
                 <div class="title">
                     <span class="text">精彩视频</span>
                 </div>
-                
-            </div>
-            <!-- 高峰 -->
-            <div class="gaofeng">
-                <div class="title">
-                    <span class="text">高峰对话</span>
+                <div class="video-div">
+                    <div id="video_container"></div>
                 </div>
-                <div class="plate clear-float">
-                    <div class="plate-left">
-                        <div>
-                            <img src="../images/tu_gaofengduihua.png" alt="">
-                            <div class="m-b">
-                                <div>畅捷通关爱活动正式开启，助力企业数字</div>
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="plate-right">
-                        <li id="plate0">
-                            <div class="plate-active">畅捷通关爱活动正式开启，助力企业数字</div>
-                            <div>5月20日，畅捷通第10届以“中小微企业数字化赋能行动”为主题的小微企业关爱活动。</div>
-                        </li>
-                        <li id="plate1">
-                            <div>用友与智齿科技达成战略合作</div>
-                            <div>今天，用友网络科技股份有限公司（以下简称：用友）与北京智齿博创科技有限公司</div>
-                        </li>
-                        <li id="plate2">
-                            <div>用友与中国红十字会总会战略签约</div>
-                            <div>2020年5月9日，用友网络科技股份有限公司与中国红十字会总平台战略合作签约仪式</div>
-                        </li>
-                        <li id="plate3">
-                            <div>用友网络发布2020年一季度报</div>
-                            <div>用友网络发布2020年一季度经营业绩，实现营业收入人民币10.89亿元，同比减少</div>
-                        </li>
-                    </ul>
+                <div class="video-title">
+                    成长型企业云服务 YonSuite 使能企业数字化、智能化发展
                 </div>
-
             </div>
-            <div class="conten-bg">
-                <div class="yuan1_dahuijianjie">
-                    <img src="../images/intro.png" alt="">
-                </div>
-
+            <div class="market">
+                <img src="../images/forum.jpg" alt="" class="market-img">
             </div>
+         
             <div class="bg_dahuijiabin">
-                <div class="title" style="margin-bottom:-20px;">
-                    <span class="text">大会嘉宾</span>
+                <div class="title" style="margin-bottom:-20px;margin-top: 65px;">
+                    <span class="text">嘉宾介绍</span>
                 </div>
                 <div class="swiper-shdow">
                     <div class="swiper-main">
@@ -262,289 +236,29 @@
                 </div>
 
 
-                <div class="assembly">
-                    <div class="assembly-img-box">
-                        <img src="../images/test/t1.png" alt="">
-                    </div>
-                    <div class="assembly-img-box">
-                        <img src="../images/test/t2.png" alt="">
-                    </div>
-                    <div class="assembly-img-box not">
-                        <img src="../images/test/t3.png" alt="">
-                    </div>
-                </div>
+              
             </div>
-            <!--专题论坛  -->
+            <!--资料下载  -->
             <div class="bg_dahuijiabin">
                 <div class="title">
-                    <span class="text">专题论坛</span>
+                    <span class="text">资料下载</span>
                 </div>
-                <div class="special">
-                    <div id="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="spec-box">
-                                    <div>
-                                        <img src="../images/zhantiluntan_1.png" alt="" class="spec-1">
-                                        <div class="pop">
-                                            <p>数智营销专题论坛</p>
-                                            <p>8月6日 13:30-13:45</p>
-                                        </div>
-                                    </div>
-                                    <div><img src="../images/zhantiluntan_2.png" alt="" class="spec-1">
-                                        <div class="pop">
-                                            <p>数智营销专题论坛</p>
-                                            <p>8月6日 13:30-13:45</p>
-                                        </div>
-                                    </div>
-                                    <div><img src="../images/zhantiluntan_3.png" alt="" class="spec-1 no">
-                                        <div class="pop">
-                                            <p>数智营销专题论坛</p>
-                                            <p>8月6日 13:30-13:45</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="spec-box">
-                                    <div>
-                                        <img src="../images/zhantiluntan_4.png" alt="" class="spec-2">
-                                        <div class="pop1">
-                                            <div class="text-inner1">
-                                                <p>数智营销专题论坛</p>
-                                                <p>8月6日 13:30-13:45</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <img src="../images/zhantiluntan_5.png" alt="" class="spec-2 no">
-                                        <div class="pop1">
-                                            <div class="text-inner1">
-                                                <p>数智营销专题论坛</p>
-                                                <p>8月6日 13:30-13:45</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="spec-box">
-                                    <div>
-                                        <img src="../images/zhantiluntan_1.png" alt="" class="spec-1">
-                                        <div class="pop">
-                                            <p>数智营销专题论坛</p>
-                                            <p>8月6日 13:30-13:45</p>
-                                        </div>
-                                    </div>
-                                    <div><img src="../images/zhantiluntan_2.png" alt="" class="spec-1">
-                                        <div class="pop">
-                                            <p>数智营销专题论坛</p>
-                                            <p>8月6日 13:30-13:45</p>
-                                        </div>
-                                    </div>
-                                    <div><img src="../images/zhantiluntan_3.png" alt="" class="spec-1 no">
-                                        <div class="pop">
-                                            <p>数智营销专题论坛</p>
-                                            <p>8月6日 13:30-13:45</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="spec-box">
-                                    <div>
-                                        <img src="../images/zhantiluntan_4.png" alt="" class="spec-2">
-                                        <div class="pop1">
-                                            <div class="text-inner1">
-                                                <p>数智营销专题论坛</p>
-                                                <p>8月6日 13:30-13:45</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <img src="../images/zhantiluntan_5.png" alt="" class="spec-2 no">
-                                        <div class="pop1">
-                                            <div class="text-inner1">
-                                                <p>数智营销专题论坛</p>
-                                                <p>8月6日 13:30-13:45</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="spec-box">
-                                    <div>
-                                        <img src="../images/zhantiluntan_1.png" alt="" class="spec-1">
-                                        <div class="pop">
-                                            <p>数智营销专题论坛</p>
-                                            <p>8月6日 13:30-13:45</p>
-                                        </div>
-                                    </div>
-                                    <div><img src="../images/zhantiluntan_2.png" alt="" class="spec-1">
-                                        <div class="pop">
-                                            <p>数智营销专题论坛</p>
-                                            <p>8月6日 13:30-13:45</p>
-                                        </div>
-                                    </div>
-                                    <div><img src="../images/zhantiluntan_3.png" alt="" class="spec-1 no">
-                                        <div class="pop">
-                                            <p>数智营销专题论坛</p>
-                                            <p>8月6日 13:30-13:45</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="spec-box">
-                                    <div>
-                                        <img src="../images/zhantiluntan_4.png" alt="" class="spec-2">
-                                        <div class="pop1">
-                                            <div class="text-inner1">
-                                                <p>数智营销专题论坛</p>
-                                                <p>8月6日 13:30-13:45</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <img src="../images/zhantiluntan_5.png" alt="" class="spec-2 no">
-                                        <div class="pop1">
-                                            <div class="text-inner1">
-                                                <p>数智营销专题论坛</p>
-                                                <p>8月6日 13:30-13:45</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="plate-swiper-pagination"></div>
-                    </div>
-                </div>
+                
             </div>
-            <!--新闻专区  -->
-            <div class="bg_dahuijiabin">
-                <div class="title">
-                    <span class="text">新闻专区</span>
-                </div>
-                <div class="news">
-                    <div class="fl news-left">
-                        <img src="../images/xinwen.png" alt="" class="news-img">
-                    </div>
-                    <div class="fr news-right">
-                        <div class="n-a" onclick="window.open('https://mp.weixin.qq.com/s/6gxHWr6dxOd_z3oqV332NA');">
-                            <p class="n-t">商业创新平台（BIP）：商业创新 如此便捷</p>
-                            <p class="n-c">数字经济时代，信息技术在企业的应用进入数字化、智能化的新发展阶段，带给企业的价值由企业优化流程、提高效率，更多走向商业创新，帮助企业构建和发展竞争优势。
-                            </p>
-                        </div>
-                        <div class="n-a" onclick="window.open('https://mp.weixin.qq.com/s/Z57TIyO2mu7Ihc5T9EfmUg');">
-                            <p class="n-t">商业创新 如此便捷｜2020商业创新大会即刻启航</p>
-                            <p class="n-c">
-                                数智化商业浪潮已来，如何简单、便捷、快速地开展商业创新，是所有企业在云时代和数智化浪潮下的最核心诉求和竞争力。
-                            </p>
-                        </div>
-
-                        <div class="n-more-box">
-                            <div class="n-more">
-                                更多新闻 +
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--现场图集  -->
-            <!--
-            <div class="bg_dahuijiabin">
-                <div class="title">
-                    <span class="text">现场图集</span>
-                </div>
-                <div class="atlas">
-                    <div class="fl">
-                        <img src="./images/xianchangtuji_1.png" alt="" class="atlas-img1">
-                        <img src="./images/xianchangtuji_2.png" alt="" class="atlas-img2">
-                        <img src="./images/xianchangtuji_3.png" alt="" class="atlas-img3">
-                        <img src="./images/xianchangtuji_4.png" alt="" class="atlas-img4">
-                    </div>
-                    <div class="fr">
-                        <img src="./images/xianchangtuji_5.png" alt="" class="atlas-img5">
-                    </div>
-                </div>
-            </div>
-			-->
-            <!-- 查看更多 -->
-            <!--
-            <div class="media more-box">
-                <div class="more">查看更多 + </div>
-            </div>
-			-->
-
-            <!-- 赞助商 -->
+            <!-- 相关推荐 -->
             <div class="media sponsor">
                 <div class="title mb">
-                    <span class="text">直播平台</span>
+                    <span class="text">相关推荐</span>
                 </div>
                 <div class="img-box">
-                    <div> <img src="../images/lable/zb1.png" alt="" ></div>
-                    <div><img src="../images/lable/zb2.png" alt="" ></div>
-                    <div><img src="../images/lable/zb3.png" alt="" ></div>
+                    <div> <img src="../images/zhantiluntan_1.png" alt="" class="tuijian-1"></div>
+                    <div><img src="../images/zhantiluntan_4.png" alt="" class="tuijian-2"></div>
+                    <div><img src="../images/zhantiluntan_5.png" alt="" class="tuijian-3"></div>
+                    <div><img src="../images/zhantiluntan_3.png" alt=""  class="tuijian-4"></div>
                 </div>
             </div>
-            <!-- 参与伙伴 -->
-            <div class="media">
-                <div class="title mb">
-                    <span class="text">支持媒体</span>
-                </div>
-                <div class="img-box1">
-                    <div>
-                        <img src="../images/lable/mt1.png" alt="" >
-                    </div>
-                    <div>
-                        <img src="../images/lable/mt2.png" alt="" >
-                    </div>
-                    <div>
-                        <img src="../images/lable/mt3.png" alt="" >
-                    </div>
-                    <div>
-                        <img src="../images/lable/mt4.png" alt="" >
-                    </div>
-                    <div>
-                        <img src="../images/lable/mt5.png" alt="" >
-                    </div>
-                    <div>
-                        <img src="../images/lable/mt6.png" alt="" >
-                    </div>
-                    <div>
-                        <img src="../images/lable/mt7.png" alt="" >
-                    </div>
-                    <div>
-                        <img src="../images/lable/mt8.png" alt="" >
-                    </div>
-                    <div>
-                        <img src="../images/lable/mt9.png" alt="" >
-                    </div>
-                    <div>
-                        <img src="../images/lable/mt10.png" alt="" >
-                    </div>
-                    <div>
-                        <img src="../images/lable/mt11.png" alt="" >
-                    </div>
-                    <div>
-                        <img src="../images/lable/mt12.png" alt="" >
-                    </div>
-                    <div>
-                        <img src="../images/lable/mt13.png" alt="" >
-                    </div>
-                </div>
-            </div>
-            <!-- 支持媒体 -->
-            <div class="media">
-                <div class="title mb">
-                    <span class="text">支持机构</span>
-                </div>
-                <div class="img-box">
-                    <div>
-                        <img src="../images/lable/jg1.png" alt="" >
-                    </div>
-                    <div>
-                        <img src="../images/lable/jg2.png" alt="" >
-                    </div>
-                </div>
-            </div>
+          
+           
         </div>
         <footer class="footer">
             <div class="footer-main">
@@ -564,7 +278,6 @@
 <script src="../js/jquery-1.10.1.min.js"></script>
 <!-- <script src="./js/swiper.min.js"></script> -->
 <script src="../js/idangerous.swiper2.js"></script>
-<script src="../js/index.js"></script>
 <script>
     var swiper = new Swiper('.swiper-container', {
         autoplay: 3000,
